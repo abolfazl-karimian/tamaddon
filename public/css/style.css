@@ -1,0 +1,3226 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+@font-face {
+    font-family: "Yekan";
+    src: url('../font/Yekan.eot?#') format('eot'),
+    url('../font/Yekan.woff') format('woff'),
+    url('../font/Yekan.ttf') format('truetype');
+}
+body {
+    line-height: 1;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:Vazir;
+    position: relative;
+    overflow-x: hidden;
+}
+input,button{
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+
+:root {
+    --orange : #FEA35A;
+    --orange2 : #ff8701;
+    --blue : #6D7D9E;
+    --gray : #F0F0F0;
+    --white : #ffffff;
+    --h2blackColor : #525051;
+
+}
+.shoppingBasketBtn {
+    width: 110px;
+    height: 42px;
+    background-color: var(--blue);
+    color: white;
+    float: left;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 12px;
+    box-sizing: border-box;
+}
+.shoppingBasketBtn img {
+    width: 25px;
+    height: 21px;
+    color: white;
+    float: left;
+    margin-top: -3px;
+}
+.basketImg {
+    color: white;
+
+}
+.shoppingBasket {
+    float: right;
+}
+.shoppingBasket a {
+    text-decoration: none;
+    color: white;
+}
+.pageBox {
+    width: 100%;
+    height: auto;
+}
+.header {
+    width: 100%;
+    background-color: #fbfbfb;
+    height: 656px;
+    box-sizing: border-box;
+}
+.navBar {
+    width: 100%;
+    height: 80px;
+    background-color: var(--white);
+    box-shadow: 0 3px 5px #0000001c;
+    box-sizing: border-box;
+}
+.inner-navBar {
+    width: 75%;
+    margin: auto;
+    height: 50px;
+
+    box-sizing: border-box;
+}
+.menuIcon {
+    float: right;
+}
+.hamburgerMenu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 32px;
+    height: 4px;
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+    background-color: var(--orange);
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 4px)
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-5px, -5px) ;
+}
+
+.logo {
+    float: left;
+
+}
+.menu {
+    float: right;
+    margin-top: 15px;
+}
+.submenu {
+    float: right;
+    margin-left: 25px;
+    font-size: 14px;
+
+}
+.submenu a:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+.kharideKetab {
+    background-color: var(--orange);
+    height: 42px;
+    margin-top: -14px;
+    border-radius: 4px;
+    width: 99px;
+    color: white;
+    box-sizing: border-box;
+    /* border: navy; */
+    border: none;
+    box-shadow: 0px 1px 4px var(--orange);
+    cursor: pointer;
+}
+.kharideKetab:hover {
+    background-color: var(--orange2);
+}
+.buyBook a:hover {
+    color: var(--white);
+}
+
+.submenu.kharideKetab {}
+
+.submenu p {
+    display: inline-block;
+    text-align: center;
+}
+.submenu img {
+    display: inline-block;
+    margin-top: 10px;
+    width: 14px;
+    height: 18px;
+    float: right;
+    margin-right: 10px;
+}
+.buyBook {
+    float: left;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+.buyBook a {
+    color: var(--white);
+}
+.introduction {
+    /* width: 1080px; */
+    margin: auto;
+    height: 480px;
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 49px;
+}
+.bookImg1 {
+    float: right;
+    width: 50%;
+    margin-top: 40px;
+    display: none;
+}
+.h2Box2 {
+    display: none;
+    margin: auto;
+}
+.h2Box2 h2 {
+    font-size: 18px;
+    text-align: center;
+    color: var(--h2blackColor);
+
+}
+.bookImg1 img {width: 337px;float: right;height: 484px;border: none;box-shadow: 1px 8px 21px -2px #afabab;}
+.introTxt {
+    width: 50%;
+    direction: rtl;
+    float: left;
+    margin-top: 42px;
+}
+.introTxt h2 {
+    font-size: 23px;
+    box-sizing: border-box;
+    color: #3c3c3c;
+}
+.ayarTamadoni {
+    margin-top: 40px;
+}
+.jomhori {
+    margin-top: 6px;
+    margin-bottom: 32px;
+}
+.pBox {}
+.pBox {
+    color: #404040;
+}
+.introTxt p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 22px;
+
+}
+.btnn {
+    display: inline-block;
+    width: 104px;
+    border: 2px solid var(--orange);
+    border-radius: 6px;
+    height: 42px;
+    margin-top: 41px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 13px -6px var(--orange);
+    margin-left: 25px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.buyBook1 a{
+    color: var(--white);
+}
+.buyBook1:hover {
+    border-color: var(--orange2);
+    background-color: var(--orange2);
+    cursor: pointer;
+}
+.moreInformation1 a{
+    color: var(--orange)
+}
+.moreInformation1 a:hover{
+    color: var(--orange2);
+}
+.moreInformation1:hover{
+    cursor: pointer;
+    border-color: var(--orange2);
+}
+
+.buyBook1 {
+    border-color: var(--orange);
+    background-color: var(--orange);
+    color: var(--white);
+}
+.btnn img {
+    width: 14px;
+    height: 18px;
+    display: inline-block;
+    float: right;
+    margin-left: 7px;
+}
+
+.buyBookBtn {
+
+    display: inline-block;
+}
+#moreInformation1 {}
+
+.moreInfo {}
+
+.aboutBook {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    padding-top: 95px;
+    color: #404040;
+}
+.aboutBook-title {margin: auto;text-align: center; padding-top: 0;}
+
+.line {
+    margin: auto;
+    width: 47px;
+    height: 3px;
+    background-color: var(--orange);
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aboutBook-text-part1 {
+    text-align: center;
+    line-height: 25px;
+    direction: rtl;
+    font-size: 14px;
+    padding: 0px 162px 0 162px;
+}
+.aboutBook h4 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 46px;
+
+}
+.seMaghooleBox {
+    width: 100%;
+    background-color: var(--blue);
+    height: 120px;
+    margin-top: 95px;
+}
+.seMaghoole {
+    height: 240px;
+    margin:auto;
+    width: 929px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    z-index: 2;
+    margin-top: -158px;
+
+
+
+    /*! position: absolute; */
+}
+
+.seMaghoole img {
+    width: 12px;
+    height: 14px;
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    margin-top:5px;
+    /*display: none;*/
+
+
+
+
+}
+.seMaghoole div {
+    width: 268px;
+    float: right;
+    border-radius: 6px;
+    box-shadow:1px 3px 18px 4px #b5b5b538;
+    padding: 23px 35px;
+    box-sizing: border-box;
+    direction: rtl;
+    margin-top: 50px;
+    display: none;
+    background-color: var(--white);
+    height: 189px;
+
+
+
+}
+
+.seMaghoole p {
+    font-size: 14px;
+    line-height: 31px;
+    /*display: none;*/
+    /*margin-top: 5px;*/
+
+}
+.seMaghoole h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    /*display: none;*/
+
+}
+.video1 {
+    display: none;
+    margin:auto;
+}
+.onvaneMaghalat-box {
+    width: 100%;
+    height: 580px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #fbfbfb;
+}
+
+.onvaneMaghalat-right {
+    width: 75%;
+    height: 441px;
+    /*! background-color: #fbfbfb; */
+    /*! float: right; */
+    box-sizing: border-box;
+    padding: 31px 45px;
+    margin: auto;
+}
+.onvaneMaghalat-right h3 {
+    direction: rtl;
+}
+.onvaneMaghalat-right .onvaneMaghalat-txt {
+    direction: rtl;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+    padding-left: 215px;
+    margin-top: 29px;
+    margin-bottom: 24px;
+}
+
+.maghalat img {
+    float: right;
+    width: 12px;
+    height: 14px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.maghalat p {
+    direction: rtl;
+    font-size: 14px;
+    margin-top: 16px;
+}
+#firstTick {
+    margin-top: 0;
+}
+.onvaneMaghalat-left video {
+    width: 488px;
+    /*! float: right; */
+    /*! position: absolute; */
+    /*! z-index: 0; */
+    /*! top: 1355px; */
+
+}.header {
+     width: 100%;
+     background-color: #fbfbfb;
+     height: 656px;
+     box-sizing: border-box;
+ }
+.navBar {
+    width: 100%;
+    height: 80px;
+    background-color: var(--white);
+    box-shadow: 0 3px 5px #0000001c;
+    box-sizing: border-box;
+}
+.inner-navBar {
+    width: 75%;
+    margin: auto;
+    height: 50px;
+
+    box-sizing: border-box;
+}
+.menuIcon {
+    float: right;
+}
+.hamburgerMenu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 32px;
+    height: 4px;
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+    background-color: var(--orange);
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 4px)
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-5px, -5px) ;
+}
+
+.logo {
+    float: left;
+
+}
+.hamburgerMenuTitles {
+    width: 100%;
+    border:none;
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 1003;
+}
+.hamburgerMenuTitles div {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--blue);
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #6262a4;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.hamburgerMenuTitles a {
+    text-align: center;
+    color:white;
+    font-size: 14px;
+}
+.hamburgerMenuTitles div:hover {
+    background-color: #6c72b0;
+    cursor: pointer;
+}
+.menu {
+    float: right;
+    margin-top: 15px;
+}
+.submenu {
+    float: right;
+    margin-left: 25px;
+    font-size: 14px;
+
+}
+.submenu a {
+    color: black;
+}
+.submenu a:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+.kharideKetab {
+    background-color: var(--orange);
+    height: 42px;
+    margin-top: -14px;
+    border-radius: 4px;
+    width: 99px;
+    color: white;
+    box-sizing: border-box;
+    /* border: navy; */
+    border: none;
+    box-shadow: 0px 1px 4px var(--orange);
+    cursor: pointer;
+}
+.kharideKetab:hover {
+    background-color: var(--orange2);
+}
+.buyBook a:hover {
+    color: var(--white);
+}
+
+.submenu.kharideKetab {}
+
+.submenu p {
+    display: inline-block;
+    text-align: center;
+}
+.submenu img {
+    display: inline-block;
+    margin-top: 10px;
+    width: 14px;
+    height: 18px;
+    float: right;
+    margin-right: 10px;
+}
+.buyBook {
+    float: left;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+.buyBook a {
+    color: var(--white);
+}
+.introduction {
+    /* width: 1080px; */
+    margin: auto;
+    height: 480px;
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 49px;
+}
+.bookImg1 {
+    float: right;
+    width: 50%;
+    /*margin-top: -40px;*/
+    /*display: none;*/
+}
+.h2Box2 {
+    display: none;
+    margin: auto;
+}
+.h2Box2 h2 {
+    font-size: 18px;
+    text-align: center;
+    color: var(--h2blackColor);
+
+}
+.bookImg1 img {width: 337px;float: right;height: 484px;border: none;box-shadow: 1px 8px 21px -2px #afabab;}
+.introTxt {
+    width: 50%;
+    direction: rtl;
+    float: left;
+    margin-top: 42px;
+}
+.introTxt h2 {
+    font-size: 23px;
+    box-sizing: border-box;
+    color: #3c3c3c;
+}
+.ayarTamadoni {
+    margin-top: 40px;
+}
+.jomhori {
+    margin-top: 6px;
+    margin-bottom: 32px;
+}
+.pBox {}
+.pBox {
+    color: #404040;
+}
+.introTxt p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 22px;
+
+}
+.btnn {
+    display: inline-block;
+    width: 104px;
+    border: 2px solid var(--orange);
+    border-radius: 6px;
+    height: 42px;
+    margin-top: 41px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 13px -6px var(--orange);
+    margin-left: 25px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.buyBook1 a{
+    color: var(--white);
+}
+.buyBook1:hover {
+    border-color: var(--orange2);
+    background-color: var(--orange2);
+    cursor: pointer;
+}
+.moreInformation1 a{
+    color: var(--orange)
+}
+.moreInformation1 a:hover{
+    color: var(--orange2);
+}
+.moreInformation1:hover{
+    cursor: pointer;
+    border-color: var(--orange2);
+}
+
+.buyBook1 {
+    border-color: var(--orange);
+    background-color: var(--orange);
+    color: var(--white);
+}
+.btnn img {
+    width: 14px;
+    height: 18px;
+    display: inline-block;
+    float: right;
+    margin-left: 7px;
+}
+
+.buyBookBtn {
+
+    display: inline-block;
+}
+#moreInformation1 {}
+
+.moreInfo {}
+
+.aboutBook {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    padding-top: 95px;
+    color: #404040;
+}
+.aboutBook-title {margin: auto;text-align: center; padding-top: 0;}
+
+.line {
+    margin: auto;
+    width: 47px;
+    height: 3px;
+    background-color: var(--orange);
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aboutBook-text-part1 {
+    text-align: center;
+    line-height: 25px;
+    direction: rtl;
+    font-size: 14px;
+    padding: 0px 162px 0 162px;
+}
+.aboutBook h4 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 46px;
+
+}
+.seMaghooleBox {
+    width: 100%;
+    background-color: var(--blue);
+    height: 120px;
+    margin-top: 95px;
+}
+.seMaghoole {
+    height: 240px;
+    margin:auto;
+    width: 929px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    z-index: 2;
+    margin-top: -158px;
+
+
+
+    /*! position: absolute; */
+}
+
+.seMaghoole img {
+    width: 12px;
+    height: 14px;
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    margin-top:5px;
+    /*display: none;*/
+
+
+
+
+}
+.seMaghoole div {
+    width: 268px;
+    float: right;
+    border-radius: 6px;
+    box-shadow:1px 3px 18px 4px #b5b5b538;
+    padding: 23px 35px;
+    box-sizing: border-box;
+    direction: rtl;
+    margin-top: 50px;
+    display: none;
+    background-color: var(--white);
+    height: 189px;
+
+
+
+}
+
+.seMaghoole p {
+    font-size: 14px;
+    line-height: 31px;
+    /*display: none;*/
+    /*margin-top: 5px;*/
+
+}
+.seMaghoole h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    /*display: none;*/
+
+}
+.video1 {
+    display: none;
+    margin:auto;
+}
+.onvaneMaghalat-box {
+    width: 100%;
+    height: 580px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #fbfbfb;
+}
+
+.onvaneMaghalat-right {
+    width: 75%;
+    height: 441px;
+    /*! background-color: #fbfbfb; */
+    /*! float: right; */
+    box-sizing: border-box;
+    padding: 31px 45px;
+    margin: auto;
+}
+.onvaneMaghalat-right h3 {
+    direction: rtl;
+}
+.onvaneMaghalat-txt {
+    direction: rtl;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+    padding-left: 72px;
+    margin-top: 29px;
+    margin-bottom: 24px;
+}
+
+.maghalat img {
+    float: right;
+    width: 12px;
+    height: 14px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.maghalat p {
+    direction: rtl;
+    font-size: 14px;
+    margin-top: 16px;
+}
+#firstTick {
+    margin-top: 0;
+}
+.onvaneMaghalat-left video {
+    width: 488px;
+    /*! float: right; */
+    /*! position: absolute; */
+    /*! z-index: 0; */
+    /*! top: 1355px; */
+
+}.header {
+     width: 100%;
+     background-color: #fbfbfb;
+     height: 656px;
+     box-sizing: border-box;
+ }
+.navBar {
+    width: 100%;
+    height: 80px;
+    background-color: var(--white);
+    box-shadow: 0 3px 5px #0000001c;
+    box-sizing: border-box;
+}
+.inner-navBar {
+    width: 75%;
+    margin: auto;
+    height: 50px;
+
+    box-sizing: border-box;
+}
+.menuIcon {
+    float: right;
+}
+.hamburgerMenu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 32px;
+    height: 4px;
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+    background-color: var(--orange);
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 4px)
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-5px, -5px) ;
+}
+
+.logo {
+    float: left;
+
+}
+.menu {
+    float: right;
+    margin-top: 15px;
+}
+.submenu {
+    float: right;
+    margin-left: 25px;
+    font-size: 14px;
+
+}
+.submenu a:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+.kharideKetab {
+    background-color: var(--orange);
+    height: 42px;
+    margin-top: -14px;
+    border-radius: 4px;
+    width: 99px;
+    color: white;
+    box-sizing: border-box;
+    /* border: navy; */
+    border: none;
+    box-shadow: 0px 1px 4px var(--orange);
+    cursor: pointer;
+}
+.kharideKetab:hover {
+    background-color: var(--orange2);
+}
+.buyBook a:hover {
+    color: var(--white);
+}
+
+.submenu.kharideKetab {}
+
+.submenu p {
+    display: inline-block;
+    text-align: center;
+}
+.submenu img {
+    display: inline-block;
+    margin-top: 10px;
+    width: 14px;
+    height: 18px;
+    float: right;
+    margin-right: 10px;
+}
+.buyBook {
+    float: left;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+.buyBook a {
+    color: var(--white);
+}
+.introduction {
+    /* width: 1080px; */
+    margin: auto;
+    height: 480px;
+    width: 80%;
+    box-sizing: border-box;  }
+.bookImg1 {
+    float: right;
+    width: 50%;
+    /*margin-top: -40px;*/
+    /*display: none;*/
+}
+.h2Box2 {
+    display: none;
+    margin: auto;
+}
+.h2Box2 h2 {
+    font-size: 18px;
+    text-align: center;
+    color: var(--h2blackColor);
+
+}
+.bookImg1 img {width: 337px;float: right;height: 484px;border: none;box-shadow: 1px 8px 21px -2px #afabab;}
+.introTxt {
+    width: 50%;
+    direction: rtl;
+    float: left;
+    margin-top: 42px;
+}
+.introTxt h2 {
+    font-size: 23px;
+    box-sizing: border-box;
+    color: #3c3c3c;
+}
+.ayarTamadoni {
+    margin-top: 40px;
+}
+.jomhori {
+    margin-top: 6px;
+    margin-bottom: 32px;
+}
+.pBox {}
+.pBox {
+    color: #404040;
+}
+.introTxt p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 22px;
+
+}
+.btnn {
+    display: inline-block;
+    width: 104px;
+    border: 2px solid var(--orange);
+    border-radius: 6px;
+    height: 42px;
+    margin-top: 41px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 13px -6px var(--orange);
+    margin-left: 25px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.buyBook1 a{
+    color: var(--white);
+}
+.buyBook1:hover {
+    border-color: var(--orange2);
+    background-color: var(--orange2);
+    cursor: pointer;
+}
+.moreInformation1 a{
+    color: var(--orange)
+}
+.moreInformation1 a:hover{
+    color: var(--orange2);
+}
+.moreInformation1:hover{
+    cursor: pointer;
+    border-color: var(--orange2);
+}
+
+.buyBook1 {
+    border-color: var(--orange);
+    background-color: var(--orange);
+    color: var(--white);
+}
+.btnn img {
+    width: 14px;
+    height: 18px;
+    display: inline-block;
+    float: right;
+    margin-left: 7px;
+}
+
+.buyBookBtn {
+
+    display: inline-block;
+}
+#moreInformation1 {}
+
+.moreInfo {}
+
+.aboutBook {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    padding-top: 95px;
+    color: #404040;
+}
+.aboutBook-title {margin: auto;text-align: center; padding-top: 0;}
+
+.line {
+    margin: auto;
+    width: 47px;
+    height: 3px;
+    background-color: var(--orange);
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aboutBook-text-part1 {
+    text-align: center;
+    line-height: 25px;
+    direction: rtl;
+    font-size: 14px;
+    padding: 0px 162px 0 162px;
+}
+.aboutBook h4 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 46px;
+
+}
+.seMaghooleBox {
+    width: 100%;
+    background-color: var(--blue);
+    height: 120px;
+    margin-top: 95px;
+}
+.seMaghoole {
+    height: 240px;
+    margin:auto;
+    width: 929px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    z-index: 2;
+    margin-top: -158px;
+
+
+
+    /*! position: absolute; */
+}
+
+.seMaghoole img {
+    width: 12px;
+    height: 14px;
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    margin-top:5px;
+    /*display: none;*/
+
+
+
+
+}
+.seMaghoole div {
+    width: 268px;
+    float: right;
+    border-radius: 6px;
+    box-shadow:1px 3px 18px 4px #b5b5b538;
+    padding: 23px 35px;
+    box-sizing: border-box;
+    direction: rtl;
+    margin-top: 50px;
+    display: none;
+    background-color: var(--white);
+    height: 189px;
+
+
+
+}
+
+.seMaghoole p {
+    font-size: 14px;
+    line-height: 31px;
+    /*display: none;*/
+    /*margin-top: 5px;*/
+
+}
+.seMaghoole h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    /*display: none;*/
+
+}
+.video1 {
+    display: none;
+    margin:auto;
+}
+.onvaneMaghalat-box {
+    width: 100%;
+    height: 580px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #fbfbfb;
+}
+
+.onvaneMaghalat-right {
+    width: 75%;
+    height: 441px;
+    /*! background-color: #fbfbfb; */
+    /*! float: right; */
+    box-sizing: border-box;
+    padding: 31px 45px;
+    margin: auto;
+}
+.onvaneMaghalat-right h3 {
+    direction: rtl;
+}
+.onvaneMaghalat-right .onvaneMaghalat-txt {
+    direction: rtl;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+    padding-left: 215px;
+    margin-top: 29px;
+    margin-bottom: 24px;
+}
+
+.maghalat img {
+    float: right;
+    width: 12px;
+    height: 14px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.maghalat p {
+    direction: rtl;
+    font-size: 14px;
+    margin-top: 16px;
+}
+#firstTick {
+    margin-top: 0;
+}
+.onvaneMaghalat-left video {
+    width: 488px;
+    /*! float: right; */
+    /*! position: absolute; */
+    /*! z-index: 0; */
+    /*! top: 1355px; */
+}
+.header {
+     width: 100%;
+     background-color: #fbfbfb;
+     height: 656px;
+     box-sizing: border-box;
+    padding-top: 50px;
+ }
+.navBar {
+    width: 100%;
+    height: 80px;
+    background-color: var(--white);
+    box-shadow: 0 3px 5px #0000001c;
+    box-sizing: border-box;
+    /*top:0;*/
+    /*position: fixed;*/
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+.inner-navBar {
+    width: 75%;
+    margin: auto;
+    height: 50px;
+
+    box-sizing: border-box;
+}
+.menuIcon {
+    float: right;
+}
+.hamburgerMenu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 32px;
+    height: 4px;
+    margin: 5px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+    background-color: var(--orange);
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 4px)
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-5px, -5px) ;
+}
+
+.logo {
+    float: left;
+
+}
+.menu {
+    float: right;
+    margin-top: 15px;
+}
+.submenu {
+    float: right;
+    margin-left: 25px;
+    font-size: 14px;
+
+}
+.submenu a:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+.kharideKetab {
+    background-color: var(--orange);
+    height: 42px;
+    margin-top: -14px;
+    border-radius: 4px;
+    width: 99px;
+    color: white;
+    box-sizing: border-box;
+    /* border: navy; */
+    border: none;
+    box-shadow: 0px 1px 4px var(--orange);
+    cursor: pointer;
+}
+.kharideKetab:hover {
+    background-color: var(--orange2);
+}
+.buyBook a:hover {
+    color: var(--white);
+}
+
+.submenu.kharideKetab {}
+
+.submenu p {
+    display: inline-block;
+    text-align: center;
+}
+.submenu img {
+    display: inline-block;
+    margin-top: 10px;
+    width: 14px;
+    height: 18px;
+    float: right;
+    margin-right: 10px;
+}
+.buyBook {
+    float: left;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+.buyBook a {
+    color: var(--white);
+}
+.introduction {
+    /* width: 1080px; */
+    margin: auto;
+    height: 480px;
+    width: 80%;
+    box-sizing: border-box;
+}
+.bookImg1 {
+    float: right;
+    width: 50%;
+    /*margin-top: -40px;*/
+    /*display: none;*/
+}
+.h2Box2 {
+    display: none;
+    margin: auto;
+}
+.h2Box2 h2 {
+    font-size: 18px;
+    text-align: center;
+    color: var(--h2blackColor);
+
+}
+.bookImg1 img {width: 337px;float: right;height: 484px;border: none;box-shadow: 1px 8px 21px -2px #afabab;}
+.introTxt {
+    width: 50%;
+    direction: rtl;
+    float: left;
+    margin-top: 42px;
+}
+.introTxt h2 {
+    font-size: 23px;
+    box-sizing: border-box;
+    color: #3c3c3c;
+}
+.ayarTamadoni {
+    margin-top: 40px;
+}
+.jomhori {
+    margin-top: 6px;
+    margin-bottom: 32px;
+}
+.pBox {}
+.pBox {
+    color: #404040;
+}
+.introTxt p {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 22px;
+
+}
+.btnn {
+    display: inline-block;
+    width: 104px;
+    border: 2px solid var(--orange);
+    border-radius: 6px;
+    height: 42px;
+    margin-top: 41px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 13px -6px var(--orange);
+    margin-left: 25px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.buyBook1 a{
+    color: var(--white);
+}
+.buyBook1:hover {
+    border-color: var(--orange2);
+    background-color: var(--orange2);
+    cursor: pointer;
+}
+.moreInformation1 a{
+    color: var(--orange)
+}
+.moreInformation1 a:hover{
+    color: var(--orange2);
+}
+.moreInformation1:hover{
+    cursor: pointer;
+    border-color: var(--orange2);
+}
+
+.buyBook1 {
+    border-color: var(--orange);
+    background-color: var(--orange);
+    color: var(--white);
+}
+.btnn img {
+    width: 14px;
+    height: 18px;
+    display: inline-block;
+    float: right;
+    margin-left: 7px;
+}
+
+.buyBookBtn {
+
+    display: inline-block;
+}
+#moreInformation1 {}
+
+.moreInfo {}
+
+.aboutBook {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    padding-top: 95px;
+    color: #404040;
+}
+.aboutBook-title {margin: auto;text-align: center; padding-top: 0;}
+
+.line {
+    margin: auto;
+    width: 47px;
+    height: 3px;
+    background-color: var(--orange);
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aboutBook-text-part1 {
+    text-align: center;
+    line-height: 25px;
+    direction: rtl;
+    font-size: 14px;
+    padding: 0px 162px 0 162px;
+}
+.aboutBook h4 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 46px;
+
+}
+.seMaghooleBox {
+    width: 100%;
+    background-color: var(--blue);
+    height: 120px;
+    margin-top: 95px;
+}
+.seMaghoole {
+    height: 240px;
+    margin:auto;
+    width: 929px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    z-index: 2;
+    margin-top: -158px;
+}
+
+.seMaghoole img {
+    width: 12px;
+    height: 14px;
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    margin-top:5px;
+}
+.seMaghoole div {
+    width: 268px;
+    float: right;
+    border-radius: 6px;
+    box-shadow:1px 3px 18px 4px #b5b5b538;
+    padding: 23px 35px;
+    box-sizing: border-box;
+    direction: rtl;
+    margin-top: 50px;
+    display: none;
+    background-color: var(--white);
+    height: 189px;
+}
+.seMaghoole p {
+    font-size: 14px;
+    line-height: 31px;
+}
+.seMaghoole h5 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.video1 {
+    display: none;
+    margin:auto;
+}
+.onvaneMaghalat-box {
+    height: 575px;
+    margin-top: 40px;
+    background-color: var(--white);
+    width: 75%;
+    margin:auto;
+    direction: rtl;
+}
+.onvaneMaghalat-right {
+    width: 50%;
+    height:350px;
+    float: right;
+    padding-top: 12px;
+    padding: 0;
+}
+.onvanemaghalat-inner{
+    /*! width: 51%; */
+    float:right;
+    width: 51%;
+
+}
+.onvanemaghalat-inner h3 {
+    padding: 31px 0 19px 45px;
+}
+.onvaneMaghalat-txt {
+    padding: 0 0 7px 3px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+.maghalat img {
+    float: right;
+    width: 12px;
+    height: 14px;
+    margin-top: 12px;
+    margin-left: 20px;
+}
+.maghalat p {
+    direction: rtl;
+    font-size: 14px;
+    margin-top: 16px;
+}
+#firstTick {
+    margin-top: 0;
+}
+.onvaneMaghalat-left {
+    width: 50%;
+    float: left;
+}
+.videoBackground {
+    width: 484px;
+    background-color: var(--gray);
+    height: 276px;
+    padding: 39px 0 0 39px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    float: left;
+}
+.onvaneMaghalat-left video {
+    width: 496px;
+    border-radius: 3px;
+    float: left;
+
+}
+
+
+.aboutAuthor {
+    width: 100%;
+    clear: both;
+    height: 644px;
+    margin-top: 0px;
+    background-color: #fbfbfb;
+
+}
+.aboutAuthor-inner {
+    width: 75%;
+    margin:auto;
+    padding-top: 34px;}
+.aboutAuthor-right {
+    float: left;
+    width: 392px;
+    /* width: 50%; */
+    margin-top: 38px;
+}
+.line1 {
+    width: 100px;
+    height: 3px;
+    border: none;
+    background-color: var(--orange);
+    /* margin-left: 347px; */
+    position: absolute;
+}
+#horizontal-1 {
+
+    /* right: 20px; */
+
+    left: 4px;
+}
+#horizontal-2 {
+
+    top: 379px;
+
+    right: -6px;
+}
+#vertical-1 {
+
+    transform: rotate(90deg);
+
+    left: -47px;
+
+    top: 48px;
+}
+#vertical-2 {
+    top: 330px;
+    transform: rotate(90deg);
+    right: -55px;
+}
+.frame {
+    width: 359px;
+    height: 420px;
+    float: left;
+    margin-top: -20px;
+    position: relative;
+}
+.authorImg {
+    width: 350px;
+    height: 368px;
+    margin: auto;
+    float: right;
+    margin-top: 7px;
+}
+.authorInformation-btn {
+    float: left;
+    color: var(--white);
+    background-color: var(--orange);
+    width: 126px;
+    height: 48px;
+    margin-top: -27px;
+    padding: 15px 28px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 0 1px 7px 0
+    #ffab65;
+    line-height: 18px;
+    margin-right: 129px;
+    margin-left: 8px;
+}
+.authorInformation-btn:hover {
+    border-color: var(--orange2);
+    background-color: var(--orange2);
+    cursor: pointer;
+}
+.arrow {
+    width: 50px;
+    height: 14px;
+    /* margin-right: 39px; */
+}
+#leftArrow {
+    transform: rotate(180deg);
+    margin-left: 42px;
+    margin-top: 13px;
+}
+.aboutAuthor-left {
+
+    width: 50%;
+    margin-top: -48px;
+    direction: rtl;
+    box-sizing: border-box;
+    float: right;
+    padding-top: 34px;
+}
+.secondBtn {display: none}
+
+.aboutAuthor-inner h3 {
+    margin-bottom: 37px;
+    float: right;
+    width: 100%;
+    direction: rtl;
+}
+.aboutAuthor-left span {font-size: 16px;color: var(--orange);/*! margin-bottom: 51px; */line-height: 45px;}
+.aboutAuthor-left p {font-size: 14px;line-height: 28px;}
+.boldP {font-weight: bold}
+
+.second-slider {
+    display: none;
+}
+
+.articleOwner {
+    width: 100%;
+    height: 464px;
+    margin-top: 0;
+    padding-top: 53px;
+}
+.articleOwner-innerBox {
+    width: 100%;
+    height: 134px;
+    background-color: var(--blue);
+    margin-top: 126px;
+}
+.articleOwner-information-container {
+    width: 1080px;
+    height: 420px;
+    margin:auto;
+    overflow: hidden;
+    margin-top: -200px;
+    direction: rtl;
+    display: none
+;
+    /*! float: right; */
+}
+.articleOwner-arrow {
+    float: left;
+    margin-top: -44px;
+    color: var(--white);
+    margin-left: 14px;
+    width: 50%;
+}
+.arrow-left {
+    transform: rotate(180deg);
+    margin-left: -14px;
+    margin-top: 33px;
+}
+.arrow-right {
+    width: 50px;
+    height: 14px;
+}
+.slider-wrapper {
+    width: 1080px;
+    height: 374px;
+    /* overflow: hidden; */
+    /*! float: right; */
+}
+.inner-wrapper {
+    /* float: left; */
+    height: 425px;
+    /* position: relative; */
+    display: inline-block;
+    width: 3540px;
+    padding: 0;
+    margin: 0;
+    /*! float: right; */
+}
+.slide {
+    width: 1080px;
+    display: inline-block;
+    /*! float: right; */
+    margin-right:10px;
+}
+
+.articleOwner-box {
+    width: 340px;
+    direction: rtl;
+    float: right;
+    background-color: var(--white);
+    border-radius: 5px;
+    margin-top: 64px;
+    margin-left: 20px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px 30px;
+
+    box-shadow: 0 8px 40px -5px rgba(9, 31, 67, .1);
+}
+.last {
+
+    margin-left: 0;
+}
+.articleOwner-box img {
+    width: 80px;
+    margin: auto;
+    display: block;
+    height: 80px;
+    /* position: absolute; */
+    border-radius: 100%;
+    /* margin-top: -356px; */
+    margin-top: -42px;
+    /* margin-bottom: -16px; */
+
+    box-shadow: 0 8px 40px -5px rgba(9, 31, 67, .1);
+}
+.articleOwner-box h5 {
+    margin-top: 22px;
+    /*display: rtl;*/
+    /* direction: rtl; */
+}
+.articleOwner-name {
+
+
+
+}
+.articleOwner-up {
+    height: 50px;
+    width: 75%;
+    margin: auto;
+}
+.articleOwner-up h4 {
+    width: 50%;
+    float: right;
+    direction: rtl;
+}
+
+.articleOwner-box p {
+    font-size: 14px;
+    margin-top: 11px;
+    line-height: 23px;
+    /* direction: rtl; */
+}
+.articleOwner-box span {
+    font-weight: 500;
+}
+.articleOwner-box div {
+    margin: auto;
+    font-size: 14px;
+    color: var(--white);
+    background-color: var(--orange);
+    width: 100px;
+    height: 38px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 0px 1px 7px 0px #ffc495;
+    line-height: 18px;
+    mrgin-top: 35px;
+    margin-top: 51px;
+}
+.articleOwner-box div:hover {
+    border-color: var(--orange2);
+    background-color: var(--orange2);
+    cursor: pointer;
+}
+
+.one div {
+    margin-top: 27px;
+}
+
+.four div {
+    margin-top: 79px;
+}
+
+.five div {
+    margin-top: 73px;
+}
+.articleOwner-box .last {
+    margin-left: 0;
+}
+
+.second-slider .last {
+    margin-left: 0;
+}
+.slide2 {
+    width: 100%;
+}
+.inner-wrapper2 {}
+.third-slider {display: none}
+.inner-wrapper3 {
+           margin: auto;
+}
+.slide3 {width: 100%;
+    height: 422px;
+}
+
+
+
+.testimonialBox {
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+    padding-top:50px;
+}
+.testimonial {
+
+    height: 283px;
+    margin: auto;
+    margin-top: auto;
+    background-color: var(--gray);
+    padding: 68px 92px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+.testimonial-up {
+    height: 50px;
+    margin: auto;
+    width: 77%;
+}
+.testimonial-up h4 {
+    width: 50%;
+    float: right;
+    direction: rtl;
+}
+.testimonial-arrow {
+    float: left;
+    margin-top: -44px;
+    color: var(--white);
+    margin-left: 14px;
+    width: 50%;
+}
+.arrow-left-testimonial {
+    transform: rotate(180deg);
+    margin-left: -14px;
+    margin-top: 33px;
+}
+.arrow-right-testimonial {
+    width: 50px;
+    height: 14px;
+}
+.slide-testimonial p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+}
+.inner-testimonialBox {
+    width: 77%;
+    height: auto;
+    margin:auto;
+}
+.testimonialBox img {
+    width: 33px;
+    height: 26px;
+}
+#top-quotes {
+
+    margin-left: 82px;
+    margin-top: -13px;
+    position: absolute;
+}
+#bottom-quotes {
+
+    float: right;
+    transform: rotate(180deg);
+    margin-top: -14px;
+    margin-right: 82px;
+}
+.slide-testimonial h5 {
+    text-align: center;
+    margin-top: 13px;
+}
+.inner-wrapper-testimonial {
+    overflow: hidden;
+    width: auto;
+    height: 300px;
+    float: right;
+}
+
+.slide-testimonial {
+    width: 100%;
+    margin: auto;
+    margin-right: auto;
+    margin-right: 0;
+    height: 300px;
+    direction: rtl;
+    margin-bottom: 90px;
+}
+.inner-testimonial {
+
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+
+}
+.contact-box {
+    width: 100%;
+    background-color: var(--blue);
+    height: auto;
+}
+.inner-contact-box {
+    width: 76%;
+    margin: auto;
+    height: 367px;
+
+}
+.contact-title {
+    height: 42px;
+    /*! margin-top: 50px; */
+    /*! margin-bottom: 30px; */
+    padding-top: 57px;
+    color: white;
+    width: 30%;
+    float: right;
+}
+.contact-title h4  {
+    direction: rtl;
+    float: right;
+}
+.post-comment-box {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+/*form {*/
+/*    !*! overflow: auto; *!*/
+/*    clear: both;*/
+/*    margin-top:58px;*/
+/*}*/
+/*input {*/
+/*    border:none;*/
+/*    background-color: var(--white);*/
+/*    height: 50px;*/
+/*    !*! border-bottom: 2px solid gray; *!*/
+
+
+/*    direction: rtl;*/
+/*    padding-right: 10px;*/
+/*    box-sizing: border-box;*/
+/*    border-radius: 6px;*/
+/*}*/
+/*.form-name {*/
+/*    width: 49%;*/
+/*    float: right;*/
+/*    border-left: 1px solid gray;*/
+
+/*    margin-left: 0;*/
+/*    !*! border-radius: 0px 6px 0 0; *!*/
+/*    !*! direction: rtl; *!*/
+/*    !*! padding-right: 10px; *!*/
+/*    !*! box-sizing: border-box; *!*/
+/*}*/
+/*.form-email {*/
+/*    width: 49%;*/
+/*    float: left;*/
+/*    margin-left: 0;*/
+/*    !*! border-radius: 6px 0 0 0; *!*/
+/*}*/
+
+
+
+.form2 {
+    /*! overflow: auto; */
+    clear: both;
+    margin-top:58px;
+    font-size: 13px;
+}
+.input2 {
+    border:none;
+    background-color: var(--white);
+    height: 50px;
+    /*! border-bottom: 2px solid gray; */
+
+
+    direction: rtl;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.form-name {
+    width: 49%;
+    float: right;
+    border-left: 1px solid gray;
+    height: 42px;
+    font-size: 12px;
+    margin-left: 0;
+    margin-bottom: 0;
+    /*! border-radius: 0px 6px 0 0; */
+    /*! direction: rtl; */
+    /*! padding-right: 10px; */
+    /*! box-sizing: border-box; */
+    color: #000;
+}
+.form-email {
+    width: 49%;
+    float: left;
+    margin-left: 0;
+    height: 42px;
+    font-size: 12px;
+    margin-bottom: 0;
+    color: black;
+
+    /*! border-radius: 6px 0 0 0; */
+}
+.form2-textarea {
+    direction: rtl;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 9px;
+    border-radius: 6px;
+    border: medium none;
+    padding-top: 18px;
+    height: 120px;
+    font-size: 12px;
+    margin-bottom: 0;
+
+}
+.button2 {
+    width: 100%;
+    background-color: var(--orange);
+    height: 48px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+
+
+
+textarea {
+    direction: rtl;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: medium none;
+    padding-top: 18px;
+    height: 120px;
+
+}
+button {
+    width: 100%;
+    background-color: var(--orange);
+    height: 48px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+.information {
+    float: right;
+    width: 30%;
+
+    color: white;
+    padding-top: 20px;
+}
+.publicist {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 62px;
+}
+.author-contact-box {
+    width: 100%;
+    height: 50px;
+}
+.information span {
+    /*! display: block; */
+    direction: rtl;
+}
+.publicist-title , .author-contact-title {
+    direction: rtl;
+    /*! direction: ; */
+    float: right;
+    width: 100%;
+    margin-bottom: 18px;
+    color: var(--orange);
+}
+.publicist-number , .author-email {
+    direction: ltr;
+    float: right;
+}
+.publicist-number {
+
+    width: 100%;
+    float: right;
+    margin-bottom: 24px;
+
+}
+.modal-box {
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.modal {
+    width: 75% ;
+    margin: 6% auto;
+    overflow-y: auto;
+    height: 75%;
+    background-color:#fefefe;
+    box-sizing: border-box;
+    direction: rtl;
+    padding: 50px;
+
+}
+.modal h4 {margin-bottom: 25px;
+    color: var(--blue);}
+.modal h5 {margin-bottom: 16px;}
+.modal span { color: var(--orange);line-height: 32px;display: inline-block;}
+
+.modal p {
+    line-height: 25px;
+     font-size: 14px;
+    margin-bottom: 18px;
+}
+.content {
+    margin-bottom: 30px;
+}
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -40px;
+    margin-right: -27px;
+
+}
+.close:hover,
+.close:focus {
+    color: var(--orange2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#scrollTop {
+    display: inline-block;
+    background-color: var(--orange);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#scrollTop::after {
+
+    font-weight: normal;
+    font-style: normal;
+    line-height: 50px;
+    color: #fff;
+}
+#scrollTop:hover {
+    cursor: pointer;
+    background-color: var(--orange2);
+}
+#scrollTop:active {
+    background-color: var(--orange2);
+}
+#scrollTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 1920px) {
+    .inner-navBar {  width: 76%;  }
+    .menuIcon {  display: none;  }
+    .header {      height: 636px;  }
+    .navBar {height: 80px;padding-top: 17px;}
+    .introduction {  width: 76%;  }
+    .bookImg1 img {  width: 387px;  height: 597px; margin-top: 46px;  }
+    .introTxt {margin-top: 15px;}
+    .h2Box1 h2 {  font-size: 25px; }
+    .h2Box1 {  font-size: 25px; }
+    .pBox p { font-size: 16px; }
+    .aboutBook-text-part1 {
+        width: 76%;
+        margin: auto
+    }
+    .articleOwner-information-container {
+
+    }
+    .one1 div {
+        margin-top: 29px;
+    }
+    .two1 div {
+
+    }
+    .three1 div {
+
+    }
+    .four1 div {
+        margin-top: 75px;
+    }
+    .five1 div {
+        margin-top:75px;
+    }
+    /*.four1 div {*/
+        /*margin-top: 77px;*/
+    /*}*/
+    /*.five1 div {*/
+        /*margin-top: 76px;*/
+    /*}*/
+    .one2 div{
+
+    }
+    .two2 div{
+
+    }
+    .three2 div{
+
+    }
+    .one3 div {
+
+    }
+    .two3 div{
+
+    }
+    .three3 div{
+
+    }
+
+}
+@media screen and (max-width: 1366px) {
+    .inner-navBar {  width: 75%;  }
+    .header { height: 535px; }
+    .introduction {  width: 75%;  }
+    .bookImg1 img {  width: 337px;  height: 484px;}
+    .introTxt {margin-top: 11px;}
+    .h2Box1 { margin-bottom: 45px; }
+    .pBox p {  font-size: 14px;  }
+    .one1 div {
+        margin-top: 33px;
+    }
+    .two1 div {
+        margin-top: 56px;
+    }
+    .three1 div {
+        margin-top: 56px;
+    }
+    .four1 div {
+        margin-top: 79px;
+    }
+    .five1 div {
+        margin-top: 79px;
+    }
+
+}
+@media screen and (max-width: 1080px){
+    .onvaneMaghalat-box {
+        width: 90%;
+        height: 525px;
+    }
+    .onvaneMaghalat-right {
+        height: 300px;
+    }
+    .onvaneMaghalat-left video {
+        width: 415px;
+    }
+    .videoBackground {
+        width: 409px;
+        height: 231px;
+        padding: 29px 0 0 31px;
+    }
+    .aboutAuthor-inner {
+        width: 90%;
+    }
+    .aboutAuthor-right {width: 40%;}
+    .frame {width: 325px;/*! height: 350px; */}
+    #horizontal-1 {left: -5px;}
+    #vertical-1 {left: -56px;}
+    .authorImg {width: 325px;height: 350px;}
+    #horizontal-2 {top: 361px;}
+    #vertical-2 {top: 312px;}
+    .authorInformation-btn {
+        margin-top: -46px;
+        margin-left: 2px;}
+    .aboutAuthor-left {width: 60%;}
+    .articleOwner-up {
+        width: 90%;
+    }
+    .articleOwner-information-container { width: 90%;}
+    .articleOwner-box { width: 27.5%;}
+    .slider-wrapper { width: 100%;}
+    .articleOwner-box p {
+        font-size: 12.5px;
+        text-align: justify;
+    }
+    .two1 div {
+        margin-top: 33px;
+    }
+    .six1 div {
+        margin-top: 33px;
+    }
+    .seven1 div {
+        margin-top: 33px;
+    }
+    .eight1 div {
+        margin-top: 33px;
+    }
+    .nine1 div {
+        margin-top: 56px;
+    }
+    .testimonial {  padding: 58px 92px;}
+    .testimonial-up {
+        width: 90%;
+
+    }
+    .inner-testimonialBox {
+
+        width: 90%;
+    }
+    .inner-contact-box {
+
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .inner-navBar { width: 90%;}
+    .header { height: 503px;padding-top: 17px;}
+    .introduction { width: 90%;}
+    .bookImg1 {margin-top: -34px;display: block;
+    }
+    .introTxt {margin-top: 7px;}
+    .h2Box1 h2 {font-size: 23px; }
+    .onvaneMaghalat-box {width: 90%;}
+    .onvanemaghalat-inner {width: 100%;}
+    .onvaneMaghalat-txt {padding: 0 0 7px 3px;}
+    .videoBackground {width: 433px;height: 247px;padding: 35px 0 0 35px;}
+    .onvaneMaghalat-left video {width: 438px;}
+    .authorInformation-btn {
+        margin-top: -33px;
+    }
+    .aboutAuthor-right {
+        margin-top: 32px;
+    }
+    .articleOwner-box {
+        width: 26.5%;
+        margin-left:14px;
+    }
+    .articleOwner-box p {
+        font-size: 12px;
+    }
+    .two1 div {
+        margin-top: 33px;
+    }
+    .testimonial {  padding: 40px 92px;}
+
+
+}
+@media screen and (max-width: 960px) {
+    .header { height: 462px; }
+    .navBar {height: 80px;box-sizing: border-box;padding-top: 18px;}
+    .introduction {width: 90%;}
+    .bookImg1 { display: block}
+    .h2Box2 {}
+    .bookImg1 img {
+        width: 294px;
+        height:440px;
+    }
+    .aboutBook-text-part1 {
+        padding: 0 130px 0 130px;
+        text-align: center;
+    }
+    .introTxt {margin-top: 3px;}
+    .seMaghoole {width: 90%}
+    .aboutAuthor-right {
+        margin-top: 26px;
+        width: 35%;
+    }
+    .frame {width: 290px;}
+    #horizontal-2 {top: 322px;}
+    #vertical-2 {top: 273px;}
+    .authorImg {
+        width: 289px;
+        height: 310px;
+    }
+    .authorInformation-btn {
+        margin-top: -83px;
+        width:283px;
+        margin-left: 3px;
+    }
+    .articleOwner-box {
+        width: 24.5%;
+        margin-left: 25px;
+        padding: 0px 16px;
+    }
+    .seven1 div {
+        margin-top: 55px;
+    }
+    .eight1 div {
+        margin-top: 57px;
+    }
+    .two1 div {
+        margin-top: 58px;
+    }
+}
+@media screen and (max-width: 910px){
+    .videoBackground {
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+    .onvaneMaghalat-left video {
+        margin-top: 25px;
+        width: 382px;
+    }
+    .seMaghooleBox {margin-top: 82px}
+    .seMaghoole div {padding: 22px 15px;width: 230px}
+    .seMaghoole h5 {font-size: 14px}
+    .seMaghoole p {font-size: 12px}
+    .articleOwner-box {
+        width: 24%;
+        margin-left: 17px;
+        padding: 0px 12px;
+    }
+    .slide {
+        margin-right: 0;
+    }
+    .articleOwner-box p {
+        font-size: 13px;
+        text-align: justify;
+    }
+    .articleOwner-box p {
+        font-size: 12px;
+    }
+    .six1 div {
+        margin-top: 56px;
+    }
+    .inner-testimonialBox {
+        width: 88%;
+    }
+
+}
+
+
+@media screen and (max-width: 766px) {
+    .menu { display: none;}
+    .menuIcon { display: block; }
+    .header {height: 533px;}
+    .navBar {height: 65px;}
+    .change .bar1 {transform: rotate(-45deg) translate(-8px, 7px);}
+    .introduction {width: 90%;margin-top: 0;}
+    .bookImg1 img { width: 274px; height:421px; }
+    .h2Box1 {margin-bottom: 40px;}
+    .h2Box1 h2 {font-size: 22px;}
+    .btnBox {margin-top: 1px;}
+    .aboutBook {padding-top: 47px}
+    .aboutBook h2 {font-size: 23px}
+    .aboutBook-text-part1 {
+        font-size: 13px;
+        text-align: center;
+        padding: 0 100px 0 100px;
+    }
+    .aboutBook h4 {margin-bottom:16px}
+    .seMaghooleBox {margin-top: 82px}
+    .seMaghoole div {padding: 22px 15px;width: 200px}
+    .seMaghoole h5 {font-size: 14px}
+    .seMaghoole p {font-size: 12px}
+    .onvaneMaghalat-box {
+        height:468px;
+    }
+    .videoBackground {
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+    .onvaneMaghalat-left video {
+        margin-top: 40px;
+        width: 335px;
+    }
+    .aboutAuthor-right {margin-top: 30px;width: 35%;margin-right: 17px;}
+    .frame {width: 240px;height: 359px;}
+    .authorImg {width: 230px;height: 250px;float: left;}
+    #horizontal-2 {top: 261px;right: 3px;}
+    #vertical-2 {top: 210px;right: -45px;}
+    .aboutAuthor-left {width: 61%;}
+    .authorInformation-btn {
+        width: 223px;
+    }
+    .articleOwner-information-container {
+        width: 97%;
+        margin-top: -262px;
+    }
+    .articleOwner-box {
+        width: 22%;
+        margin-left: 16px;
+        padding: 0 12px;
+        height: 255px;
+    }
+
+    .articleOwner-box p {
+        font-size: 12px;
+    }
+    .one1 div {
+        margin-top: 48px;
+    }
+    .two1 div {
+        margin-top: 25px;
+    }
+    .three1 div {
+        margin-top: 48px;
+    }
+    .articleOwner-arrow {
+        margin-top: -32px;
+        width: 46%;
+    }
+    .seven1 div {
+        margin-top: 48px;
+    }
+    .eight1 div {
+        margin-top: 47px;
+    }
+    .nine1 div {
+        margin-top: 69px;
+    }
+    .four1 div {
+        margin-top: 93px;
+    }
+    .five1 div {
+        margin-top: 93px;
+    }
+    .six1 div {
+        margin-top: 47px;
+    }
+    .inner-testimonialBox {
+        width: 90%;
+    }
+    .testimonial {
+        padding: 40px 59px;}
+    #bottom-quotes {
+        margin-right: 34px;
+    }
+    #top-quotes {
+        margin-left: 34px;
+    }
+    .post-comment-box {
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .header {width: 100%; height: auto; }
+    .navBar {height: 60px; padding-top: 0; }
+    .inner-navBar {width: 95%;margin:auto;height: 50px;padding:17px 6px 0 6px; }
+    .menuIcon {width:34px; margin-top: 0; }
+    .bar1, .bar2, .bar3 {width: 31px;  height: 4px; margin: 4px 0; }
+    .change .bar1 { transform: rotate(-45deg) translate(-6px, 3px);}
+    .change .bar3 {transform: rotate(45deg) translate(-8px, -5px);}
+    .introduction {width: 100%;height: 876px;margin-top: 0; }
+    .bookImg1 {width: 100%;height: 400px;display: block;margin-top: 25px;}
+    .bookImg1 img { display: block; margin: auto;height: 408px;float: unset;margin-top: 36px; }
+    .introTxt { width: 100%;height: auto; margin-top: 137px;}
+    .h2Box1 { display: none;}
+    .h2Box2 { text-align: center; display: block;margin-top: 19px; }
+    .h2Box2 h2 {font-size: 24px}
+    .introTxt h2 { font-size: 18px; display: inline-block; text-align: center;  }
+    .pBox { width:85%;margin: auto;}
+    .introTxt p { line-height: 28px; font-size: 13px}
+    .btnn { margin-left: 5px; width: 140px; height: 48px; padding-right: 28px; }
+    .buyBook1 img{margin-top: 3px;width: 16px;}
+    .buyBookBtn { margin-top: 0;text-align: center; margin-left: 8px; }
+    .btnBox { width: 85%; box-sizing: border-box;margin: auto; margin-top:-6px}
+    #aboutBook {width: 90%;}
+    #aboutBook h2 {text-align: right;direction: rtl;font-size: 22px;}
+    .line { /*! text-align: right */float: right;/*! display: block; */width: 61px;/*! margin-right: 16px; */display: inline-block;}
+    #aboutBook p {direction: rtl;text-align: justify;padding: 0;margin-top: 44px;margin-bottom: 30px}
+    #aboutBook h4 {float: right;}
+    .seMaghooleBox {margin-top: 125px;}
+    .seMaghoole {/*! margin-top: -158px; */padding-top: -1px;}
+    .second-slider {display: block}
+    .first-slider {display: none}
+    .slide2 {
+        height: 400px;
+        margin-right: 10px;
+    }
+    .articleOwner-box {
+        width: 48%;
+        margin-left: 16px;
+        height: 224px;
+    }
+    .articleOwner-information-container {
+        margin-top: -241px;
+    }
+    .last {
+        margin-left:0;}
+    .one2 div {
+        margin-top: 40px;
+    }
+    .two2 div {
+        margin-top: 40px;
+    }
+    .five2 div { margin-top: 63px; }
+    .four2 div { margin-top: 63px; }
+    .seven2 div {margin-top: 40px}
+    .eight2 div {margin-top: 40px}
+    .six2 div {margin-top: 40px}
+    .three2 div {margin-top: 40px}
+    .slide-testimonial p {
+        text-align: justify;
+        font-size: 13px;
+
+    }
+    .testimonial {
+        padding: 35px 43px;
+    }
+    .slide-testimonial h5 {
+        float: right;
+    }
+
+}
+
+@media screen and (max-width: 668px){
+    .seMaghooleBox {display: none}
+    .seMaghoole { display: none}
+    .aboutBook h4 {display: none}
+    .video1 {
+        display: block;
+        margin:auto;
+        width: 80%;
+    }
+    .onvaneMaghalat-box h3 {
+        margin-top: 25px;
+        padding-bottom: 1px;
+    }
+    .onvaneMaghalat-right {
+        width:100%;
+    }
+    .onvaneMaghalat-txt {
+        margin-bottom: 11px;
+    }
+    .onvaneMaghalat-left video {
+        display: none;
+    }
+    #about-author {height: 1067px;}
+    .aboutAuthor-right {width: 100%;margin-top: -6px;}
+    .frame {margin: auto;float: unset;width: 350px;margin-bottom: 36px;}
+    .authorImg {width: 350px;height: 343px;}
+    #horizontal-2 {top: 354px;right: -7px;}
+    #vertical-2 {top: 304px;right: -55px;}
+    .firstBtn {display: none;}
+    .secondBtn {display: block;
+        margin-top: 36px;
+        float: right;
+        margin-right: 0;
+        width: 133px;
+                }
+    .aboutAuthor-left {
+        width: 100%;
+    }
+    .articleOwner-box {
+        width: 46.5%;
+        margin-left: 23px;
+    }
+    .last {
+        margin-left:0;
+    }
+    .testimonial {
+        padding: 29px 43px;
+    }
+}
+
+@media screen and (max-width: 601px){
+    .testimonial {
+        padding: 32px 43px;
+        height: 311px;
+    }
+    .post-comment-box {
+
+        width: 100%;
+        float: none;
+        margin: auto;
+
+    }
+    .contact-box {
+        height: 456px;
+
+    }
+    .information {
+        padding-top: 46px;
+
+    }
+    .publicist {
+
+        width: 50%;
+        float: right;
+        margin-bottom: 0;
+
+    }
+    .publicist-title, .author-contact-title {
+
+        float: right;
+        width: 50%;
+
+    }
+    .information {
+        width: 100%;
+
+    }
+}
+@media screen and (max-width: 510px) { .introduction {height: 895px}
+    .articleOwner-information-container {
+        margin-top: -257px;
+    }
+    .inner-testimonialBox {
+        width: 92%;
+    }
+    .inner-testimonial {
+        height: 271px;
+    }
+    .testimonial {
+        padding: 26px 28px;
+        height: 311px;
+    }
+    .articleOwner-box {
+        width: 46.5%;
+        margin-left: 14px;
+        height: 253px;
+    }
+    .one2 div {
+        margin-top: 18px;
+    }
+    .one2 div {
+        margin-top: 44px;
+    }
+    .two2 div {
+        margin-top: 22px;
+    }
+    .seven2 div {
+        margin-top: 46px;
+    }
+    .eight2 div {
+
+        margin-top: 45px;
+
+    }
+}
+@media screen and (max-width: 480px) {
+    .h2Box1 { text-align: center; }
+    .btnBox { width: 295px; box-sizing: border-box; margin-top: -8px; }
+    .h2Box2 h2 {  font-size: 22px}
+    .introduction {height: 919px}
+    #aboutBook h2 {font-size: 19px}
+    #aboutBook {width: 85%;padding-top: 37px}
+    .video1 {width: 100%;
+        margin:0}
+    #about-author {
+        height: 1114px;
+    }
+    .second-slider {display: none}
+    .third-slider {display: block}
+    .articleOwner-box {
+        width: 100%;
+    }
+    .slider-wrapper {
+        width: 75%;
+        margin: auto;
+    }
+    .articleOwner-up h4 {
+        width: 70%;
+
+    }
+    .articleOwner-arrow {
+        margin-top: -48px;
+        width: 30%;
+    }
+    .arrow-left {
+
+        width: 28px;
+    }
+    .arrow-right {
+        width: 29px;
+        height: 14px;
+        margin-left: 10px;
+    }
+    .articleOwner-innerBox {
+        height: 107px;
+        margin-top: 108px;
+    }
+    .articleOwner-box {
+        height: 218px;
+    }
+    .articleOwner-information-container {
+        margin-top: -225px;
+    }
+    .eight3 div { margin-top: 34px;  }
+    .seven3 div { margin-top: 34px;  }
+    .three3 div { margin-top: 34px;  }
+    .one3 div { margin-top: 34px;  }
+    .two3 div { margin-top: 34px;  }
+    .six3 div { margin-top: 34px;  }
+    .nine3 div { margin-top: 57px;  }
+    .five3 div { margin-top: 57px;  }
+    .four3 div { margin-top: 57px;  }
+    .articleOwner {
+        height: 450px;
+    }
+    .slide-testimonial p {  font-size: 12.5px;  }
+    .testimonial {
+        padding: 26px 24px;  }
+}
+
+@media screen and (max-width: 414px){
+    .introduction{height: 925px}
+    #about-author {
+        height: 1150px;
+    }
+    #horizontal-2 {
+        top: 331px;
+        right: -7px;
+    }
+    #vertical-2 {
+        top: 282px;
+        right: -55px;
+    }
+    .authorImg {
+        width: 300px;
+        height: 320px;
+    }
+    .frame {
+        margin: auto;
+        float: unset;
+        width: 300px;
+        margin-bottom: 36px;
+        height: 336px;
+    }
+    .inner-testimonialBox {
+        width: 95%;
+    }
+    .slide-testimonial p {
+        font-size: 12px;
+    }
+    .testimonial {
+        height: 429px;
+
+    }
+    .inner-testimonial {
+        height: 378px;
+        padding: 52px 1px;
+    }
+    .inner-wrapper-testimonial {
+
+        height: 304px;
+    }
+}
+@media screen and (max-width: 391px) {
+    .introduction { height: 972px}
+    .onvanemaghalat-inner h3 {
+        padding-top: 6px;
+        font-size: 17px;
+    }
+    .onvaneMaghalat-txt {
+        margin-top: 23px;
+        margin-bottom: 0;
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .slider-wrapper {
+
+        width: 85%;
+
+    }
+    .inner-testimonial {
+        padding: 34px 1px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    #about-author {
+        height: 1190px;
+    }
+    .secondBtn {
+        width: 100%;
+    }
+    .inner-wrapper-testimonial {
+        height: 343px;
+    }
+    .testimonial {
+        height: 416px;
+        padding: 6px 24px;
+
+    }
+    .inner-testimonial {
+        height: 394px;
+        padding: 39px 1px;
+    }
+    .form-name {
+
+        width: 100%;
+
+    }
+    .form-email {
+
+        width: 100%;
+        margin-top: 8px;
+
+    }
+    textarea {
+
+
+        margin-top: 8px;
+
+    }
+    .information {
+
+        padding-top: 30px;
+        font-size: 13px;
+
+    }
+    .publicist {
+        margin-bottom: 0px;
+
+    }
+    .contact-title {
+        padding-top: 45px;
+    }
+
+
+}
+@media screen and (max-width: 360px){
+    .slider-wrapper {
+
+        width: 90%;
+
+    }
+    .testimonial {
+        height: 455px;
+        padding: 6px 24px;
+    }
+    .inner-wrapper-testimonial {
+        height: 382px;
+    }
+}
+@media screen and (max-width: 321px) {
+    .header {
+        width: 100%;
+        height: auto;
+    }
+    .navBar {
+        height: 50px;
+    }
+    .inner-navBar {
+        width: 95%;
+        margin:auto;
+        height: 50px;
+        padding:14px 6px 0 6px;
+    }
+
+    .menuIcon {
+        width:32px ;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 28px;
+        height: 3px;
+        margin: 4px 0;
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-5px, -5px) ;
+    }
+    .introduction {
+        width: 100%;
+        height: 961px;
+        margin-top: 0;
+    }
+    .bookImg1 {
+        width: 100%;
+        height: 400px;
+        display: block;
+        margin-top: 25px;
+    }
+    .bookImg1 img {
+        display: block;
+        margin: auto;
+        width: 239px;
+        height: 369px;
+        float: unset;
+        margin-top: 36px;
+    }
+    .introTxt {
+        width: 100%;
+        height: 350px;
+        margin-top: 91px;
+    }
+    .h2Box1 {
+        text-align: center;
+        display: none;
+    }
+    .h2Box2 {
+        text-align: center;
+        display: block;
+        margin-top: 19px;
+    }
+    .h2Box2 h2 {font-size:20px}
+    .introTxt h2 {
+        font-size: 18px;
+        display: inline-block;
+        text-align: center;
+    }
+    .pBox {
+        width:85%;
+        margin: auto;
+    }
+    .introTxt p {
+        line-height: 28px;
+    }
+    .btnn {
+        margin-left: 5px;
+        width: 140px;
+        height: 48px;
+        padding-right: 28px;
+    }
+    .buyBook1 img{margin-top: 3px;width: 16px;}
+    .buyBookBtn {
+        margin-top: 0;
+        text-align: center;
+        margin-left: 8px;
+    }
+    .btnBox {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 14px 40px 0;
+        margin-top: -8px;
+    }
+    #about-author {height: 1215px}
+
+    .articleOwner-up h4 {
+        width: 80%;
+        font-size: 15px;
+    }
+    .arrow-left {
+        margin-top: 33px;
+        width: 28px;
+        margin-right: 7px;
+    }
+    .arrow-right { width: 28px; }
+    .articleOwner-arrow {
+        margin-top: -48px;
+        width: 28%;
+    }
+    .articleOwner-box img {
+        width: 74px;
+        height: 74px;
+        margin-top: -37px;
+    }
+    .articleOwner-box {
+
+        height: 215px;
+
+    }
+    .articleOwner-innerBox {
+        margin-top: 106px;
+    }
+    .articleOwner-information-container {
+
+        margin-top: -224px;
+
+    }
+    .articleOwner-box p {
+        line-height: 21px;
+    }
+    .eight3 div { margin-top: 37px;  }
+    .seven3 div { margin-top: 37px;  }
+    .three3 div { margin-top: 37px;  }
+    .one3 div { margin-top: 37px;  }
+    .two3 div { margin-top: 37px;  }
+    .six3 div { margin-top: 37px;  }
+    .nine3 div {
+
+        margin-top: 37px;
+
+    }
+    .five3 div { margin-top: 57px;  }
+    .four3 div { margin-top: 57px;  }
+    .maghalat p {
+        font-size: 13px;
+
+    }
+    #firstTick {
+
+        margin-top: -3px;
++
+    }
+    .onvanemaghalat-inner h3 {
+
+        font-size: 16px;
+
+    }
+    .aboutAuthor-left p {
+
+        font-size: 12px;
+
+
+    }
+    .authorImg {
+
+        width: 285px;
+
+    }
+    .frame {
+        width: 286px;
+
+    }
+
+}
