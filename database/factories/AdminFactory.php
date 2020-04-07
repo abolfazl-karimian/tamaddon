@@ -20,6 +20,6 @@ $factory->define(Admin::class, function (Faker $faker) {
         'Email'        => 'bahmani@gmail.com',
         'PhoneNumber'  => '025-37832834',
 //        'PhoneNumber'  => $faker->e164PhoneNumber,
-        'Password'     => $faker-> password
+        'Password'     => \Hash::make('admin@123')
     ];
 });
