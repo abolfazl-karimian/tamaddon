@@ -24,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        view()->composer('Layers.Frame',function ($view){
+        view()->composer('user.layouts.template',function ($view){
             $view->with('admin',\App\Admin::GetInfo());
         });
     }

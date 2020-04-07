@@ -1,4 +1,4 @@
-@extends('Layers.Frame')
+@extends('user.layouts.template')
 
 @section('Title')
     کتاب عیار تمدنی | صفحه کتاب
@@ -23,62 +23,62 @@
                 <tr>
                     <th scope="row">1</th>
                     <td>نام کتاب</td>
-                    <td>{{ $book->Name }}</td>
+                    <td>{{ $book->name }}</td>
 
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td>نويسنده</td>
-                    <td>{{ $book->Author }}</td>
+                    <td>{{ $book->author }}</td>
 
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>انتشارات</td>
-                    <td>{{ $book->Publisher }}</td>
+                    <td>{{ $book->publisher }}</td>
 
                 </tr>
                 <tr>
                     <th scope="row">4</th>
                     <td>سال چاپ</td>
-                    <td>{{ $book->Year }}</td>
+                    <td>{{ $book->year }}</td>
 
                 </tr>
                 <tr>
                     <th scope="row">5</th>
                     <td>نوبت چاپ</td>
-                    <td>{{ $book->Edition }}</td>
+                    <td>{{ $book->edition }}</td>
                 </tr>
                 <tr>
                     <th scope="row">6</th>
                     <td>تعداد صفحات</td>
-                    <td>{{ $book->Pages }}</td>
+                    <td>{{ $book->pages }}</td>
                 </tr>
                 <tr>
                     <th scope="row">7</th>
                     <td>شابك</td>
-                    <td>{{ $book->ISBN }}</td>
+                    <td>{{ $book->isbn }}</td>
                 </tr>
                 <tr>
                     <th scope="row">8</th>
                     <td>قیمت</td>
-                    <td> {{ $book->Price }} </td>
+                    <td> {{ $book->price }} </td>
                 </tr>
                 </tbody>
             </table>
 
-           @include('Layers.AddToBasket')
+           @include('user.book.add-to-basket')
 
         </div>
     </div>
 
-        @include('Layers.Comments')
+        @include('user.book.comments')
     <!--<button type="button"class="btn">افزودن نظر جدید</button>-->
     <!-- Button trigger modal -->
 
 
     <!-- Modal -->
-    @include('Layers.CommentModal')
+    @include('user.book.comment-modal')
 {{--{{ dd('dd') }}--}}
 
 

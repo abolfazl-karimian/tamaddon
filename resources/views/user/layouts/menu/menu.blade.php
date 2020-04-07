@@ -13,7 +13,7 @@
                 <div class="buyBook"><a href="{{ url('book') }}">خرید کتاب</a></div>
                 <img src="icon/shopping-bag.svg"></div>
 
-            @include('Layers.ScrollableMenu')
+            @include('user.layouts.menu.scroll-menu')
 
         </div>
 
@@ -29,6 +29,6 @@
 <div class="hamburgerMenuTitles">
     <div><a href="{{ url('book') }}">خرید کتاب</a></div>
 
-    @include('Layers.ScrollableMenu')
+    @include('user.layouts.menu.scroll-menu')
 
 </div>

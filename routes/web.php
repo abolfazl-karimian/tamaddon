@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/home','PageController@home')->name('home');
+Route::get('/home','HomeController@home')->name('home');
 //Route::get('/home','CommentController@store')->name('home');
 
 Route::get('/', function () {
@@ -24,10 +24,10 @@ Route::get('/', function () {
     return redirect()->route('home');
 });
 
-Route::get('book','BookController@show');
+Route::get('book','BookController@show')->name('book.show');
 
-Route::post('suggestion','SuggestionController@store')->middleware('throttle:5,600');
+Route::post('suggestion','SuggestionController@store')->name('suggestion.store')->middleware('throttle:50,600');
 
-Route::post('comment','CommentController@store')->middleware('throttle:,600');
+Route::post('comment','CommentController@store')->name('comment.store')->middleware('throttle:50,600');
 
-Route::post('cart','CartController@Tempstore');
+Route::post('cart','CartController@tempStore')->name('cart.tempStore');

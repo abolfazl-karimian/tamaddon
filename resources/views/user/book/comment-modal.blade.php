@@ -12,17 +12,17 @@
                 <form class="form1" action="{{ url('comment') }}" method="post">
                     {{ csrf_field() }}
                     <div class="formUp">
-                        <input type="text" placeholder="نام" minlength="3" maxlength="30" name="FirstName"
-                               value="{{ old('FirstName') }}" class="name" required
+                        <input type="text" placeholder="نام" minlength="3" maxlength="30" name="first_name"
+                               value="{{ old('first_name') }}" class="name" required
                                oninvalid="setCustomValidity('نام خود را به درستی وارد کنید')" oninput="setCustomValidity('')" >
                         <input type="text" placeholder="نام خانوادگی" minlength="3" maxlength="30" maxlength="30"
-                               class="name" name="LastName" value="{{ old('LastName') }}" required
+                               class="name" name="last_name" value="{{ old('last_name') }}" required
                                oninvalid="setCustomValidity('نام خانوادگی خود را به درستی وارد کنید')"
                                oninput="setCustomValidity('')" >
                     </div>
-                    <textarea class="form-textarea" name="Body" rows="8" cols="80" maxlength="500" placeholder="پیام شما"
+                    <textarea class="form-textarea" name="body" rows="8" cols="80" maxlength="500" placeholder="پیام شما"
                               required oninvalid="setCustomValidity('متن خود را وارد وارد کنید')"
-                              oninput="setCustomValidity('')">{{ old('Body') }}</textarea>
+                              oninput="setCustomValidity('')">{{ old('body') }}</textarea>
                     <button type="submit" class="btn btn3" >ارسال دیدگاه</button>
 
                     <div class="modal-footer">

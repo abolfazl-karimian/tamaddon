@@ -15,10 +15,10 @@ class CreateCommentsTable extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->string('FirstName',20);
-            $table->string('LastName', 40);
-            $table->text('Body');
-            $table->boolean('Authorized')->default(0);
+            $table->string('first_name',20);
+            $table->string('last_name', 40);
+            $table->text('body');
+            $table->boolean('authorized')->default(0);
             $table->timestamps();
         });
     }

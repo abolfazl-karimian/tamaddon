@@ -8,10 +8,10 @@ use Faker\Generator as Faker;
 
 $factory->define(Comment::class, function (Faker $faker) {
     return [
-        'FirstName'  => $faker->firstName,
-        'LastName'   => $faker->lastName,
-        'Body'       => $faker->paragraph(5),
-        'Authorized' => 0,
+        'first_name'  => $faker->firstName,
+        'last_name'   => $faker->lastName,
+        'body'       => $faker->paragraph(5),
+        'authorized' => 0,
 
 /*        'FirstName'   => 'محمدرضا',
         'LastName'    => 'بهمنی',

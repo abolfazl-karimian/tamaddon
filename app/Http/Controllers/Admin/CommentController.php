@@ -17,7 +17,7 @@ class CommentController extends Controller
     public function index()
     {
         $admin = User::first();
-        $unConfirmedComments = Comment::where('Authorized', '1')->paginate(10);
+        $unConfirmedComments = Comment::where('authorized', '1')->paginate(10);
         return view('admin.comment.index', get_defined_vars());
     }
 
@@ -25,7 +25,7 @@ class CommentController extends Controller
     public function unConfirmedComments()
     {
         $admin = User::first();
-        $unConfirmedComments = Comment::where('Authorized', '0')->paginate(10);
+        $unConfirmedComments = Comment::where('authorized', '0')->paginate(10);
         return view('admin.comment.un-confirmed', get_defined_vars());
     }
 
@@ -33,7 +33,7 @@ class CommentController extends Controller
     public function confirmComment($id)
     {
         $comment = Comment::find($id);
-        $comment->Authorized = 1;
+        $comment->authorized = 1;
         $comment->save();
     }
 

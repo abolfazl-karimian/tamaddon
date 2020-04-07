@@ -29,8 +29,8 @@
         <tbody>
         @foreach($unConfirmedComments as $comment)
             <tr>
-                <td>{{ $comment['FirstName'] }} {{ ' ' }} {{ $comment['LastName'] }}</td>
-                <td>{{ $comment['Body'] }}</td>
+                <td>{{ $comment['first_name'] }} {{ ' ' }} {{ $comment['last_name'] }}</td>
+                <td>{{ $comment['body'] }}</td>
                 <td><?php  echo $v=new Verta($comment['created_at']); ?></td>
                 <td>
                     <Delete url="{{ route('admin.comment.destroy', $comment->id) }}"></Delete>

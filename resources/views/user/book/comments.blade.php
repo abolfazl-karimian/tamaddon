@@ -8,15 +8,15 @@
             <div class="testimonialBox">
                 <div class="userInfo">
                     <img src="icon/user-image-with-black-background.svg">
-                    <p>{{ $comment->FirstName." ".$comment->LastName}}</p>
+                    <p>{{ $comment->first_name." ".$comment->last_name}}</p>
                     <span class="date">
                     در تاریخ
-                    {{ $Verta->PopularFormat($comment->created_at) }}
+                    {{ $Verta->popularFormat($comment->created_at) }}
                 </span>
                 </div>
 
                 <div class="testimonialTxt">
-                    {{ $comment->Body }}
+                    {{ $comment->body }}
                 </div>
             </div>
 

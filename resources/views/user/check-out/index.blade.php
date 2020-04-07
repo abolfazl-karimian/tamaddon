@@ -1,4 +1,4 @@
-@extends('Layers.Frame')
+@extends('user.layouts.template')
 
 @section('Title')
     کتاب عیار تمدنی | تکمیل اطلاعات
@@ -16,7 +16,7 @@
             <form class="form3" action="" method="post">
                 <div class="firstLastName">
                     <label class="nameLabel">نام و نام خانوادگی</label>
-                    <input type="text" name="name" class=" nameAndFamily" id="nameAndFamily" placeholder="نام و نام خانوادگی" >
+                    <input type="text" name="full_name" class=" nameAndFamily" id="nameAndFamily" placeholder="نام و نام خانوادگی" >
                     <span class="error nameError" id="nameError"></span>
                 </div>
                 <div class="emailBox">
@@ -26,12 +26,12 @@
                 </div>
                 <div class="phoneBox">
                     <label class="phoneLabel">شماره تلفن</label>
-                    <input type="text" name="phoneNumber" class="phoneNumber" id="phoneNumber" placeholder="تلفن همراه(*********09)">
+                    <input type="text" name="phone_number" class="phoneNumber" id="phoneNumber" placeholder="تلفن همراه(*********09)">
                     <span class="error phoneError" id="phoneError"></span>
                 </div>
                 <div class="codeposti">
                     <label class="codePosti">کدپستی </label>
-                    <input type="text" name="codePost" id="codePost" class="codePost">
+                    <input type="text" name="postal_code" id="codePost" class="codePost">
                     <span class="error codePostError" id="codePostError"></span>
                 </div>
                 <div class="province">

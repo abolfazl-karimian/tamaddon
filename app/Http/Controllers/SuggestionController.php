@@ -13,9 +13,9 @@ class SuggestionController extends Controller
 //        dd($request->all());
         try {
             $this->validate($request, [
-                'FullName' => 'required|min:5',
-                'Email' => 'required|email',
-                'Message' => 'required',
+                'full_name' => 'required|min:5',
+                'email' => 'required|email',
+                'body' => 'required',
             ]);
         } catch (ValidationException $e) {
             flash('بعلت وارد کردن اطلاعات نادرست، پیشنهاد شما ثبت نشد.', 'danger');

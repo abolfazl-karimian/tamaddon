@@ -101,7 +101,7 @@
     return s;
   };
 
-  // Abstraction layer for different transport layers, including fleegix/jQuery/Zepto
+  // Abstraction layer for different transport user, including fleegix/jQuery/Zepto
   //
   // Object `opts` include
   //

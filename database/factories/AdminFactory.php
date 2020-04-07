@@ -8,18 +8,18 @@ use Illuminate\Support\Str;
 
 $factory->define(Admin::class, function (Faker $faker) {
     return [
-//        'FirstName'    => $faker->firstName, /* محمدرضا */
-//        'LastName'     => $faker->lastName, /* بهمنی */
-//        'Email'        => $faker->safeEmail, //bahmani@gmail.com
-//        'PhoneNumber'  => $faker->numberBetween(9010000000,9999999999), //025-37832834
-////        'PhoneNumber'  => $faker->e164PhoneNumber,
+//        'first_name'    => $faker->firstName, /* محمدرضا */
+//        'last_name'     => $faker->lastName, /* بهمنی */
+//        'email'        => $faker->safeEmail, //bahmani@gmail.com
+//        'phone_number'  => $faker->numberBetween(9010000000,9999999999), //025-37832834
+////        'phone_number'  => $faker->e164PhoneNumber,
 //        'Password'     => $faker-> password,
 
-        'FirstName'    => 'محمدرضا',
-        'LastName'     => 'بهمنی',
-        'Email'        => 'bahmani@gmail.com',
-        'PhoneNumber'  => '025-37832834',
+        'first_name'    => 'محمدرضا',
+        'last_name'     => 'بهمنی',
+        'email'        => 'bahmani@gmail.com',
+        'phone_number'  => '025-37832834',
 //        'PhoneNumber'  => $faker->e164PhoneNumber,
-        'Password'     => \Hash::make('admin@123')
+        'password'     => \Hash::make('admin@123')
     ];
 });

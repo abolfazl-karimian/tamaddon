@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\App;
 
 //use Illuminate\Http\Request;
 
-class PageController extends Controller
+class HomeController extends Controller
 {
     public function home()
     {
@@ -18,11 +18,11 @@ class PageController extends Controller
 //        $admin = $admin->latest()->first();    ----> if the function was     public function home(Admin $admin)
 //        return view('Home',compact('admin'));
 
-        return view('Home');
+        return view('user.home');
     }
 
     public function index()
     {
-        dd('ss');
+//        dd('ss');
     }
 }

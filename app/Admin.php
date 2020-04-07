@@ -9,12 +9,12 @@ class Admin extends Model
 {
     public static function GetInfo()
     {
-       return Admin::latest()->first();
+       return User::latest()->first();
     }
 
-    // Mutator
+    //  Mutator
     public function setEmailAttribute($value)
     {
-        $this->attributes['Email'] = ucfirst($value);
+        $this->attributes['email'] = ucfirst($value);
     }
 }

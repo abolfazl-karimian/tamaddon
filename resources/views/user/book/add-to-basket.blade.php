@@ -7,7 +7,7 @@
 				<span class="input-group-btn">
 					<button class="btn btn-default" id="rightBtn" data-dir="dwn"><img src="icon/minus.svg"></button>
 				</span>
-        <input type="text" name="Number" class="form-control text-center" value="1" maxlength="2">
+        <input type="text" name="number" class="form-control text-center" value="1" maxlength="2">
         <span class="input-group-btn">
 					<button class="btn btn-default" id="leftBtn" data-dir="up"><img src="icon/plus.svg"></button>
 				</span>

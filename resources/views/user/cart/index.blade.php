@@ -1,4 +1,4 @@
-@extends('Layers.Frame')
+@extends('user.layouts.template')
 
 @section('Title')
     کتاب عیار تمدنی | سبد خرید

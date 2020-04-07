@@ -47,13 +47,13 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        $comments = Comment::AuthorizedComments();
+        $comments = Comment::authorizedComments();
 //        d($comments[0]->Body);
 //        return verta($comments[0]->created_at); // 1395-12-09 15:05:56
 //        return verta();
 
         $book = $book->latest()->first();
-        return view('Book',compact('book','comments'));
+        return view('user.book.index',compact('book','comments'));
 
     }
 

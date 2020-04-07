@@ -10,13 +10,13 @@
 <body>
 
 <div class="pageBox">
-    @include('Layers.Flash')
+    @include('user.layouts.flash.flash')
 
-    @include('Layers.Menu')
+    @include('user.layouts.menu.menu')
 
     @yield('content', 'Content not found')
 
-    @include('Layers.Footer')
+    @include('user.layouts.footer.footer')
 
 </div>
 

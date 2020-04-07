@@ -29,9 +29,9 @@
         <tbody>
         @foreach($suggestions as $suggestion)
             <tr>
-                <td>{{ $suggestion['FullName'] }}</td>
-                <td>{{ $suggestion['Email'] }}</td>
-                <td>{{ $suggestion['Message'] }}</td>
+                <td>{{ $suggestion['full_name'] }}</td>
+                <td>{{ $suggestion['email'] }}</td>
+                <td>{{ $suggestion['body'] }}</td>
                 <td><?php  echo $v=new Verta($suggestion['created_at']); ?></td>
             </tr>
         @endforeach

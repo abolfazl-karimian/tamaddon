@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-    public static function AuthorizedComments()
+    public static function authorizedComments()
     {
-        return static::where('Authorized',1)->latest()->get();
+        return static::where('authorized',1)->latest()->get();
     }
 }

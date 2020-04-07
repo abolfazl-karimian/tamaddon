@@ -35,14 +35,14 @@ class CartController extends Controller
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      * @throws ValidationException
      */
-    public function Tempstore(Request $request)
+    public function tempstore(Request $request)
     {
 //        dd('dd');
         $this->validate($request,[
-            'Number' => 'required|digits_between:1,100|numeric'
+            'number' => 'required|digits_between:1,100|numeric'
         ]);
 
-        session(['BookNumbers'=>$request->Number]);
+        session(['BookNumbers'=>$request->number]);
 //        echo session('BookNumbers');
 //        echo session('BookNumber');
 

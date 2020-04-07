@@ -37,14 +37,14 @@ class CommentController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'FirstName'  => 'required|max:30',
-            'LastName'   => 'required|max:30',
-            'Body'       => 'required|min:4|max:500',
+            'first_name'  => 'required|max:30',
+            'last_name'   => 'required|max:30',
+            'body'       => 'required|min:4|max:500',
         ]);
         $Comment = new Comment();
-        $Comment->FirstName = $request->FirstName;
-        $Comment->LastName  = $request->LastName;
-        $Comment->Body      = $request->Body;
+        $Comment->first_name = $request->first_name;
+        $Comment->last_name  = $request->last_name;
+        $Comment->body      = $request->body;
         $Comment->save();
 
 //        return back();

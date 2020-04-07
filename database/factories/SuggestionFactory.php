@@ -8,9 +8,9 @@ use Faker\Generator as Faker;
 
 $factory->define(Suggestion::class, function (Faker $faker) {
     return [
-        'FullName' => $faker->name,
-        'Email'    => $faker->safeEmail,
-        'Message'  => $faker->paragraph(8),
-//        'Message'  => $faker->realText(100)
+        'full_name' => $faker->name,
+        'email'    => $faker->safeEmail,
+        'body'  => $faker->paragraph(8),
+//        'body'  => $faker->realText(100)
     ];
 });

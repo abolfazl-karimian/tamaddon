@@ -7,45 +7,45 @@ class Jalali
 {
     // These all take the -Full Date- and return in Jalali/Shamsi
 
-    public function DayNumber($date)
+    public function dayNumber($date)
     {
         return verta($date)->day;                    /*  29  */
     }
-    public function DayWord($date)
+    public function dayWord($date)
     {
         return verta($date)->formatWord('d');      /*  بیست و نه  */
     }
-    public function DayInWeek($date)
+    public function dayInWeek($date)
     {
         return verta($date)->formatWord('l');      /*  چهارشنبه  */
     }
 
 
-    public function MonthNumber($date)
+    public function monthNumber($date)
     {
         return verta($date)->month;                 /*  8  */
     }
-    public function MonthWord($date)
+    public function monthWord($date)
     {
         return verta($date)->formatWord('F');      /*  بهمن  */
     }
 
-    public function YearNumber($date)
+    public function yearNumber($date)
     {
         return verta($date)->year;                 /*  29  */
     }
-    public function YearWord($date)
+    public function yearWord($date)
     {
         return verta($date)->formatWord('Y');      /*  هزار و سیصد و نود و نه  */
     }
 
     // this gets the Full Date And Your Preferred Format
-    public function PopularFormat($date)             /*    29 بهمن 1398    */
+    public function popularFormat($date)             /*    29 بهمن 1398    */
     {
         return verta($date)->day.' '.verta($date)->formatWord('F').' '.verta($date)->year;
     }
 
-    public function PersianFormat($date)         /*   1399-01-20 12:34:00  */
+    public function persianFormat($date)         /*   1399-01-20 12:34:00  */
     {
         return verta($date);
     }

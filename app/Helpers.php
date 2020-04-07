@@ -1,7 +1,7 @@
 <?php
 
-function flash($Message, $Type='info'){
-    session()->flash('Message',$Message);
-    session()->flash('Type',$Type);  //  info - danger - success - warning
+function flash($message, $type='info'){
+    session()->flash('message',$message);
+    session()->flash('type',$type);  //  info - danger - success - warning
 
 }
