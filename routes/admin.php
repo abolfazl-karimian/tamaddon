@@ -15,5 +15,8 @@ Route::group(['middleware' => 'admin'], function () {
 
     //admin logout
     Route::get('/logout', 'LoginController@adminLogout')->name('login.adminLogout');
+
+    //suggestion CRUD
+    Route::resource('suggestion', 'SuggestionController');
 });
 

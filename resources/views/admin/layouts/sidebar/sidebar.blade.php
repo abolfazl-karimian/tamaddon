@@ -20,6 +20,11 @@
                     <i class="fa fa-dashboard"></i> <span>داشبرد</span>
                 </a>
             </li>
+            <li class="{{ Route::is('admin.suggestion.index')? 'active' : '' }}">
+                <a href="{{ route('admin.suggestion.index') }}">
+                    <i class="fa fa-lightbulb-o"></i> <span>پیشنهادات</span>
+                </a>
+            </li>
         </ul>
     </section>
     <!-- /.sidebar -->
