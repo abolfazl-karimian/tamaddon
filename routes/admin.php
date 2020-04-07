@@ -18,5 +18,14 @@ Route::group(['middleware' => 'admin'], function () {
 
     //suggestion CRUD
     Route::resource('suggestion', 'SuggestionController');
+
+    //comment CRUD
+    Route::resource('comment', 'CommentController');
+
+    //un-confirmed comments
+    //un-confirmed comments list
+    Route::get('/comment/un-confirmed/list', 'CommentController@unConfirmedComments')->name('comment.un-confirmedComments');
+    //confirm comment
+    Route::PATCH('/comment/un-confirmed/{id}/confirm', 'CommentController@confirmComment')->name('comment.confirmComment');
 });
 

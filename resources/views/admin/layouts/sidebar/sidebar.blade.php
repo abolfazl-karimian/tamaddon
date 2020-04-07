@@ -25,6 +25,18 @@
                     <i class="fa fa-lightbulb-o"></i> <span>پیشنهادات</span>
                 </a>
             </li>
+            <li class="treeview">
+                    <a href="#" style="margin-right: 10px">
+                        <i class="fas fa-key {{ Route::is('admin.comment.*')? 'active' : '' }}"></i> <span>نظرات</span>
+                        <span class="pull-left-container">
+                    <i class="fa fa-angle-right pull-left"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                            <li class="{{ Route::is('admin.comment.index')? 'active' : '' }}"><a href="{{ route('admin.comment.index') }}"><i class="fas fa-comment"  style="margin-left: 5px"></i>نظرات تائید شده</a></li>
+                        <li class="{{ Route::is('admin.comment.un-confirmedComments')? 'active' : '' }}"><a href="{{ route('admin.comment.un-confirmedComments') }}"><i class="fas fa-comment text-danger"  style="margin-left: 5px"></i>نظرات تائید نشده</a></li>
+                    </ul>
+            </li>
         </ul>
     </section>
     <!-- /.sidebar -->
