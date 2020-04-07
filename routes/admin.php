@@ -27,5 +27,8 @@ Route::group(['middleware' => 'admin'], function () {
     Route::get('/comment/un-confirmed/list', 'CommentController@unConfirmedComments')->name('comment.un-confirmedComments');
     //confirm comment
     Route::PATCH('/comment/un-confirmed/{id}/confirm', 'CommentController@confirmComment')->name('comment.confirmComment');
+
+    //CRUD user(Admin)
+    Route::resource('user', 'UserController');
 });
 
