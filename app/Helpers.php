@@ -5,3 +5,4 @@ function flash($message, $type='info'){
     session()->flash('type',$type);  //  info - danger - success - warning
 
 }
+

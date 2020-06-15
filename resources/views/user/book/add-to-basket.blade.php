@@ -1,4 +1,4 @@
-<form action="{{ url('cart') }}" method="post">
+<form action="{{ route('order.temp-store') }}" method="post">
     {{ csrf_field() }}
     <button type="submit" class="btn btn1"><img src="icon/shopping-bag.svg">اضافه کردن به سبد خرید</button>
 

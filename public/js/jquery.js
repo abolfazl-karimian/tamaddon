@@ -1,7 +1,17 @@
 $(document).ready(function(){
-    $(window).on('scroll', function() {
-        console.log( $(this).scrollTop() );
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
     });
+
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
 
     $('.bookImg1').fadeIn(300,function () {
        $('.bookImg1').animate({marginTop:"0"},500)
@@ -16,21 +26,6 @@ $(document).ready(function(){
        $(".hamburgerMenu").removeClass("change");
         $(".hamburgerMenuTitles").css("display","none");
     });
-
-    // var btnScrollTop = $('#scrollTop');
-    //
-    // $(window).scroll(function() {
-    //     if ($(window).scrollTop() > 300) {
-    //         btnScrollTop.addClass('show');
-    //     } else {
-    //         btnScrollTop.removeClass('show');
-    //     }
-    // });
-    //
-    // btn.on('click', function(e) {
-    //     e.preventDefault();
-    //     $('html, body').animate({scrollTop:0}, '300');
-    // });
 
 
     $(document).scroll(function() {
@@ -62,15 +57,15 @@ $(document).ready(function(){
             // $('.aboutBook').css('padding-top',50)
         }
     };
-
-    //slider for authors information
+    //
+    // slider for authors information
     var current = 1;
     var max = $( ".sliderContent" ).length +1;
 
     $(".sliderContent").hide();
     $(".sliderContent:nth-child(1)").fadeIn("slow");
 
-//function to change to next quote
+// function to change to next quote
     function changeUp() {
         $(".sliderContent").hide();
         current += 1;
@@ -116,6 +111,8 @@ $(document).ready(function(){
     var slide = $('.slide');
     var slide2 = $('.slide2');
     var slide3 = $('.slide3');
+
+
 
 
     var prevSlide = $('.arrow-left');
@@ -257,6 +254,7 @@ $(document).ready(function(){
     //
     //
     // });
+
 
 
 });

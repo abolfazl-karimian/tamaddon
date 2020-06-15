@@ -41,6 +41,13 @@ class CommentController extends Controller
             'last_name'   => 'required|max:30',
             'body'       => 'required|min:4|max:500',
         ]);
+
+        //        $request->validate([
+//            'first_name'  => 'required|max:30',
+//            'last_name'   => 'required|max:30',
+//            'body'       => 'required|min:4|max:500',
+//        ]);
+
         $Comment = new Comment();
         $Comment->first_name = $request->first_name;
         $Comment->last_name  = $request->last_name;

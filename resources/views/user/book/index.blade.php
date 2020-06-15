@@ -6,12 +6,17 @@
 
 
 @section('CSS')
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/detail&purchases.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/detail&purchases.css">
+    <link rel="stylesheet" href="/css/detail&purchases1.css">
 @stop
 
 @section('content')
-
+    <a href="#" >
+        <div class="scrollToTop">
+            <img src="/icon/multimedia-option%20(3).svg" >
+        </div>
+    </a>
     <div class="details-purchase container">
         <h4>جزییات کتاب</h4>
         <div class="bookPic">
@@ -28,13 +33,13 @@
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>نويسنده</td>
+                    <td>مولف</td>
                     <td>{{ $book->author }}</td>
 
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td>انتشارات</td>
+                    <td>ناشر</td>
                     <td>{{ $book->publisher }}</td>
 
                 </tr>
@@ -67,7 +72,8 @@
                 </tbody>
             </table>
 
-           @include('user.book.add-to-basket')
+            <a href="https://bookroom.ir/book/79636/%D8%B9%DB%8C%D8%A7%D8%B1-%D8%AA%D9%85%D8%AF%D9%86%DB%8C-%D8%AC%D9%85%D9%87%D9%88%D8%B1%DB%8C-%D8%A7%D8%B3%D9%84%D8%A7%D9%85%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86">
+                <button type="button" class="btn btn1"><img src="icon/shopping-bag.svg">ورود به صفحه خرید</button></a>
 
         </div>
     </div>
@@ -79,7 +85,7 @@
 
     <!-- Modal -->
     @include('user.book.comment-modal')
-{{--{{ dd('dd') }}--}}
+
 
 
 @stop
@@ -90,3 +96,4 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/detail&purchases.js"></script>
 @stop
+

@@ -17,6 +17,17 @@ time, mark, audio, video {
 
     vertical-align: baseline;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -519,7 +530,9 @@ textarea {
     background-color: #3a3c8b;
     color: white;
 }
-
+.errorColor {
+    border: 1px solid red;
+}
 .shahr .city .azsharghi {
     display: none;
 }

@@ -9,6 +9,10 @@
 
         </div>
         <div class="menu">
+{{--            <div class="submenu kharideKetab">
+                <div class="buyBook"><a href="{{ url('book') }}">خرید کتاب</a></div>
+                <img src="/icon/shopping-bag.svg"></div>--}}
+
             <div class="submenu kharideKetab">
                 <div class="buyBook"><a href="{{ url('book') }}">خرید کتاب</a></div>
                 <img src="icon/shopping-bag.svg"></div>
@@ -17,10 +21,12 @@
 
         </div>
 
+{{--
         <div class="shoppingBasketBtn">
-            <img class="basketImg" src="icon/shopping-cart.svg">
+            <img class="basketImg" src="/icon/shopping-cart.svg">
             <div class="shoppingBasket"><a href="{{ url('cart') }}">سبد خرید</a></div>
         </div>
+--}}
 
 
         <div class="logo"></div>

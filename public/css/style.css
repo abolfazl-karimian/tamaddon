@@ -23,10 +23,10 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 @font-face {
-    font-family: "Yekan";
-    src: url('../font/Yekan.eot?#') format('eot'),
-    url('../font/Yekan.woff') format('woff'),
-    url('../font/Yekan.ttf') format('truetype');
+    font-family: "Vazir";
+    src: url('../font/Vazir.eot?#') format('eot'),
+    url('../font/Vazir.woff') format('woff'),
+    url('../font/Vazir.ttf') format('truetype');
 }
 body {
     line-height: 1;
@@ -75,7 +75,7 @@ a{
     padding: 14px 12px;
     box-sizing: border-box;
 }
-.shoppingBasketBtn img {
+.s111111111111hoppingBasketBtn img {
     width: 25px;
     height: 21px;
     color: white;
@@ -1399,7 +1399,7 @@ a{
 }
 .btnn {
     display: inline-block;
-    width: 104px;
+    width: auto;
     border: 2px solid var(--orange);
     border-radius: 6px;
     height: 42px;
@@ -1668,7 +1668,7 @@ a{
     float: left;
     color: var(--white);
     background-color: var(--orange);
-    width: 126px;
+    width: auto;
     height: 48px;
     margin-top: -27px;
     padding: 15px 28px;
@@ -2029,54 +2029,17 @@ a{
     height: auto;
     float: left;
 }
-/*form {*/
-/*    !*! overflow: auto; *!*/
-/*    clear: both;*/
-/*    margin-top:58px;*/
-/*}*/
-/*input {*/
-/*    border:none;*/
-/*    background-color: var(--white);*/
-/*    height: 50px;*/
-/*    !*! border-bottom: 2px solid gray; *!*/
-
-
-/*    direction: rtl;*/
-/*    padding-right: 10px;*/
-/*    box-sizing: border-box;*/
-/*    border-radius: 6px;*/
-/*}*/
-/*.form-name {*/
-/*    width: 49%;*/
-/*    float: right;*/
-/*    border-left: 1px solid gray;*/
-
-/*    margin-left: 0;*/
-/*    !*! border-radius: 0px 6px 0 0; *!*/
-/*    !*! direction: rtl; *!*/
-/*    !*! padding-right: 10px; *!*/
-/*    !*! box-sizing: border-box; *!*/
-/*}*/
-/*.form-email {*/
-/*    width: 49%;*/
-/*    float: left;*/
-/*    margin-left: 0;*/
-/*    !*! border-radius: 6px 0 0 0; *!*/
-/*}*/
-
-
-
-.form2 {
+form {
     /*! overflow: auto; */
     clear: both;
     margin-top:58px;
-    font-size: 13px;
 }
-.input2 {
+input {
     border:none;
     background-color: var(--white);
     height: 50px;
     /*! border-bottom: 2px solid gray; */
+    font-family: Vazir ;
 
 
     direction: rtl;
@@ -2088,54 +2051,19 @@ a{
     width: 49%;
     float: right;
     border-left: 1px solid gray;
-    height: 42px;
-    font-size: 12px;
+
     margin-left: 0;
-    margin-bottom: 0;
     /*! border-radius: 0px 6px 0 0; */
     /*! direction: rtl; */
     /*! padding-right: 10px; */
     /*! box-sizing: border-box; */
-    color: #000;
 }
 .form-email {
     width: 49%;
     float: left;
     margin-left: 0;
-    height: 42px;
-    font-size: 12px;
-    margin-bottom: 0;
-    color: black;
-
     /*! border-radius: 6px 0 0 0; */
 }
-.form2-textarea {
-    direction: rtl;
-    padding-right: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 9px;
-    border-radius: 6px;
-    border: medium none;
-    padding-top: 18px;
-    height: 120px;
-    font-size: 12px;
-    margin-bottom: 0;
-
-}
-.button2 {
-    width: 100%;
-    background-color: var(--orange);
-    height: 48px;
-    color: white;
-    border: none;
-    margin-top: 10px;
-    border-radius: 6px;
-}
-
-
-
-
 textarea {
     direction: rtl;
     padding-right: 10px;
@@ -2146,6 +2074,7 @@ textarea {
     border: medium none;
     padding-top: 18px;
     height: 120px;
+    font-family: Vazir;
 
 }
 button {
@@ -2156,17 +2085,17 @@ button {
     border: none;
     margin-top: 10px;
     border-radius: 6px;
+    cursor: pointer;
 }
 .information {
     float: right;
-    width: 30%;
-
+    width: 40%;
     color: white;
     padding-top: 20px;
 }
 .publicist {
     width: 100%;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     height: 62px;
 }
 .author-contact-box {
@@ -2186,15 +2115,20 @@ button {
     color: var(--orange);
 }
 .publicist-number , .author-email {
-    direction: ltr;
-    float: right;
+    width: 90%;
+    float: left;
+
 }
 .publicist-number {
-
-    width: 100%;
+    width: 80%;
+    margin-right: 10px;
     float: right;
-    margin-bottom: 24px;
-
+    margin-top: 7px;
+}
+.logoE {
+    float: right;
+    margin-top: 36px;
+    height: 39px;
 }
 .modal-box {
     position: fixed;
@@ -2280,6 +2214,56 @@ button {
     opacity: 1;
     visibility: visible;
 }
+.basketImg {
+    color: white;
+    width: 18px;
+    height: 24px;
+    margin-top: -5px;
+}
+.six1 div {
+    margin-top: 31px;
+}
+.seven1 div {
+    margin-top: 55px;
+}
+.eight1 div {
+    margin-top: 55px;
+}
+.nine1 div {
+    margin-top: 55px;
+}
+.scrollToTop{
+    width: 48px;
+    height: 48px;
+    background-color: #c6d2ea;
+    opacity: 0.5;
+    position:fixed;
+    bottom: 400px;
+    right:40px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 10px 6px 10px 9px;
+    display: none;
+
+}
+.scrollToTop img {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+    background-color: var(--blue);
+
+}
+.phoneIcon {
+    float: right;
+    display: inline-block;
+}
+.locationIcon {
+    float: right;
+    display: inline-block;
+}
 
 
 @media screen and (max-width: 1920px) {
@@ -2297,47 +2281,14 @@ button {
         width: 76%;
         margin: auto
     }
-    .articleOwner-information-container {
-
-    }
     .one1 div {
         margin-top: 29px;
-    }
-    .two1 div {
-
-    }
-    .three1 div {
-
     }
     .four1 div {
         margin-top: 75px;
     }
     .five1 div {
         margin-top:75px;
-    }
-    /*.four1 div {*/
-        /*margin-top: 77px;*/
-    /*}*/
-    /*.five1 div {*/
-        /*margin-top: 76px;*/
-    /*}*/
-    .one2 div{
-
-    }
-    .two2 div{
-
-    }
-    .three2 div{
-
-    }
-    .one3 div {
-
-    }
-    .two3 div{
-
-    }
-    .three3 div{
-
     }
 
 }
@@ -2434,6 +2385,9 @@ button {
 
         width: 90%;
     }
+    .three1 div {
+        margin-top: 32px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .inner-navBar { width: 90%;}
@@ -2462,7 +2416,7 @@ button {
         font-size: 12px;
     }
     .two1 div {
-        margin-top: 33px;
+        margin-top: 10px;
     }
     .testimonial {  padding: 40px 92px;}
 
@@ -2503,16 +2457,18 @@ button {
     .articleOwner-box {
         width: 24.5%;
         margin-left: 25px;
-        padding: 0px 16px;
+        padding: 0 16px;
     }
     .seven1 div {
-        margin-top: 55px;
+        margin-top: 34px;
     }
     .eight1 div {
-        margin-top: 57px;
+        margin-top: 34px;
     }
     .two1 div {
-        margin-top: 58px;
+        margin-top: 33px;}
+    .three1 div {
+        margin-top: 55px;
     }
 }
 @media screen and (max-width: 910px){
@@ -2554,10 +2510,12 @@ button {
 }
 
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 768px) {
     .menu { display: none;}
+    .shoppingBasketBtn {
+        margin-top: -6px;}
     .menuIcon { display: block; }
-    .header {height: 533px;}
+    .header {height: auto;}
     .navBar {height: 65px;}
     .change .bar1 {transform: rotate(-45deg) translate(-8px, 7px);}
     .introduction {width: 90%;margin-top: 0;}
@@ -2635,11 +2593,10 @@ button {
         margin-top: 69px;
     }
     .four1 div {
-        margin-top: 93px;
+        margin-top: 72px;
     }
     .five1 div {
-        margin-top: 93px;
-    }
+        margin-top: 72px;    }
     .six1 div {
         margin-top: 47px;
     }
@@ -2655,10 +2612,38 @@ button {
         margin-left: 34px;
     }
     .post-comment-box {
-        width: 65%;
+        width: 100%;
     }
+    .contact-box {
+        width: 100%;
 
-}
+        height: 680px;
+    }
+    .inner-contact-box {
+
+        height: 680px;
+    }
+    .contact-title {
+
+        width: 100%;
+        }
+    form {
+
+        margin-top: 40px;
+        margin-bottom: 40px;}
+    .information {
+
+        width: 100%;}
+    .logoE {
+        float: right;
+        margin-top: 15px;}
+
+
+    .publicist-number , .author-email {
+
+        margin-left: 35px;
+    }
+    }
 
 @media screen and (max-width: 700px) {
     .header {width: 100%; height: auto; }
@@ -2728,6 +2713,11 @@ button {
     .slide-testimonial h5 {
         float: right;
     }
+    .publicist-number , .author-email {
+
+        margin-left: 25px
+    ;
+    }
 
 }
 
@@ -2779,6 +2769,11 @@ button {
     .testimonial {
         padding: 29px 43px;
     }
+    .publicist-number , .author-email {
+
+        margin-left: 0
+    ;
+    }
 }
 
 @media screen and (max-width: 601px){
@@ -2786,38 +2781,38 @@ button {
         padding: 32px 43px;
         height: 311px;
     }
-    .post-comment-box {
+    /*.post-comment-box {*/
 
-        width: 100%;
-        float: none;
-        margin: auto;
+    /*    width: 100%;*/
+    /*    float: none;*/
+    /*    margin: auto;*/
 
-    }
-    .contact-box {
-        height: 456px;
+    /*}*/
+    /*.contact-box {*/
+    /*    height: 456px;*/
 
-    }
-    .information {
-        padding-top: 46px;
+    /*}*/
+    /*.information {*/
+    /*    padding-top: 46px;*/
 
-    }
-    .publicist {
+    /*}*/
+    /*.publicist {*/
 
-        width: 50%;
-        float: right;
-        margin-bottom: 0;
+    /*    width: 50%;*/
+    /*    float: right;*/
+    /*    margin-bottom: 0;*/
 
-    }
-    .publicist-title, .author-contact-title {
+    /*}*/
+    /*.publicist-title, .author-contact-title {*/
 
-        float: right;
-        width: 50%;
+    /*    float: right;*/
+    /*    width: 50%;*/
 
-    }
-    .information {
-        width: 100%;
+    /*}*/
+    /*.information {*/
+    /*    width: 100%;*/
 
-    }
+    /*}*/
 }
 @media screen and (max-width: 510px) { .introduction {height: 895px}
     .articleOwner-information-container {
@@ -2857,6 +2852,10 @@ button {
     }
 }
 @media screen and (max-width: 480px) {
+    .logoE {
+
+    margin-top: 36px;
+}
     .h2Box1 { text-align: center; }
     .btnBox { width: 295px; box-sizing: border-box; margin-top: -8px; }
     .h2Box2 h2 {  font-size: 22px}
@@ -2914,13 +2913,50 @@ button {
     .five3 div { margin-top: 57px;  }
     .four3 div { margin-top: 57px;  }
     .articleOwner {
-        height: 450px;
+        height: 390px;
+    }
+    .testimonialBox {
+
+         padding-top: 0;
     }
     .slide-testimonial p {  font-size: 12.5px;  }
     .testimonial {
         padding: 26px 24px;  }
+    #aboutBook p {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;}
 }
+@media screen and (max-width: 425px){
+    .shoppingBasketBtn {
+        margin-top: -8px;
+    }
+    #about-author {
+        height: 1181px;
+    }
+    .testimonial {
+        height: 360px;
+    }
+    .inner-testimonial {
+        height: 325px;
+    }
+    .inner-wrapper-testimonial {
 
+        height: 351px;
+    }
+    .scrollToTop {
+        width: 32px;
+        height: 32px;
+        top: 400px;
+        right: 7px;
+        padding: 7px 12px 10px 6px;
+    }
+    .scrollToTop img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
 @media screen and (max-width: 414px){
     .introduction{height: 925px}
     #about-author {
@@ -3029,13 +3065,16 @@ button {
 
     }
     .publicist {
-        margin-bottom: 0px;
+        margin-bottom: 0;
+        width: 100%;
 
     }
     .contact-title {
         padding-top: 45px;
     }
-
+    .contact-box {
+        height: 700px;
+    }
 
 }
 @media screen and (max-width: 360px){
@@ -3194,7 +3233,7 @@ button {
     .five3 div { margin-top: 57px;  }
     .four3 div { margin-top: 57px;  }
     .maghalat p {
-        font-size: 13px;
+        font-size: 1px;
 
     }
     #firstTick {
@@ -3221,6 +3260,19 @@ button {
     .frame {
         width: 286px;
 
+    }
+    .basketImg {
+        width: 14px;
+        height: 20px;
+        margin-top: -2px;
+    }
+    .shoppingBasketBtn {
+        width: 101px;
+        height: 35px;
+
+        font-size: 13px;
+
+        padding: 10px 12px;
     }
 
 }

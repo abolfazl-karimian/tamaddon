@@ -3,6 +3,9 @@
 <div class="testimonial container">
     @inject('Verta','App\Jalali')
 
+{{--    @if (!$errors->isEmpty())--}}
+{{--        {{ dd($errors) }}--}}
+{{--    @endif--}}
     @unless ($comments->isEmpty())
         @foreach ($comments as $comment)
             <div class="testimonialBox">
@@ -23,13 +26,15 @@
         @endforeach
 
         @else
-        there's no comment
+
+        <div class="pbck">
+            <p>هیچ نظری ثبت نشده است.شما اولین نفری باشید که نظر می دهید.</p>
+        </div>
     @endunless
 
 </div>
 
 <div class="link container">
-    <a href="#" class="show_hide" data-content="toggle-text"> نظرات بیشتر</a>
     <button class="btn btn2" type="button" data-toggle="modal" data-target="#modalCenter">افزودن نظر جدید</button>
 
 </div>

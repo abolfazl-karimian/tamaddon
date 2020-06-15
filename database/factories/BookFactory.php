@@ -20,9 +20,9 @@ $factory->define(Book::class, function (Faker $faker) {
         'author'    => 'محمدرضا بهمنی خدنگ',
         'publisher' => 'پژوهشگاه علوم و فرهنگ اسلامی',
         'year'      => 1398,
-        'pages'     => 500,
+        'pages'     => 760,
         'edition'   => 1,
-        'isbn'      => 2500110185317,
-        'price'     => 400000
+        'isbn'      => '978-600-195-569-3',
+        'price'     => 150000
     ];
 });

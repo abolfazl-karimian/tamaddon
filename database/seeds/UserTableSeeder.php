@@ -25,6 +25,9 @@ class UserTableSeeder extends Seeder
                 'last_name'  => 'بهمنی',
                 'is_admin' => true,
                 'email' => 'bahmani@gmail.com',
+                'location'        => ' قم، شهرک پردیسان
+انتهای بلوار دانشگاه,
+دانشگاه باقرالعلوم (علیه‌السلام)',
                 'email_verified_at' => Carbon::now(),
                 'phone_number'  => '025-37832834',
                 'password' => Hash::make('admin@123'),

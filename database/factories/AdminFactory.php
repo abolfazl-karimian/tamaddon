@@ -16,8 +16,9 @@ $factory->define(Admin::class, function (Faker $faker) {
 //        'Password'     => $faker-> password,
 
         'first_name'    => 'محمدرضا',
-        'last_name'     => 'بهمنی',
+        'last_name'     => 'بfهمنی',
         'email'        => 'bahmani@gmail.com',
+        'location'        => 'دانشگاه باقرالع',
         'phone_number'  => '025-37832834',
 //        'PhoneNumber'  => $faker->e164PhoneNumber,
         'password'     => \Hash::make('admin@123')

@@ -1,6 +1,6 @@
 @if (session()->has('message'))
     <div class="alert alert-{{ session('type') }} alert-dismissible d-flex justify-content-center"  dir="rtl" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+{{--        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>--}}
         <strong>{{ session('message') }}</strong>
 {{--            <li>{{ $errors->all() }}</li>--}}
 

@@ -18,10 +18,11 @@ Route::get('/home','HomeController@home')->name('home');
 //Route::get('/home','CommentController@store')->name('home');
 
 Route::get('/', function () {
-//    dd('dd');
+//    dd($id);
 //    dd(bcrypt(Str::random(1)));
-//    return redirect('/home');
+//    return view('user.cart.index',compact('prov'));
     return redirect()->route('home');
+
 });
 
 Route::get('book','BookController@show')->name('book.show');
@@ -30,4 +31,13 @@ Route::post('suggestion','SuggestionController@store')->name('suggestion.store')
 
 Route::post('comment','CommentController@store')->name('comment.store')->middleware('throttle:50,600');
 
-Route::post('cart','CartController@tempStore')->name('cart.tempStore');
+Route::resource('order','OrderController');
+Route::post('order/temp-store','OrderController@tempStore')->name('order.temp-store');
+Route::get('get-cities/{province}'    , 'OrderController@getCities');
+
+
+//Route::get('check','OrderController@index');  //test
+
+
+//Route::get('get-provinces' , 'ProvinceCityController@getProvinces');
+//Route::get('get-cities/{province}'    , 'ProvinceCityController@getCities');

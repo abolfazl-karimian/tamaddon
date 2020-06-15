@@ -8,8 +8,8 @@
                oninput="setCustomValidity('')">
         <input class="input2 form-email" minlength="5" maxlength="60" type="email" name="email" placeholder="ایمیل"
                value="{{ old('email') }}" required oninvalid="setCustomValidity('ایمیل خود را به درستی وارد کنید')"
-               oninput="setCustomValidity('')">
-        <textarea class="form2-textarea" name="body" rows="8" cols="80" placeholder="پیام شما"
+               >
+        <textarea class="form2-textarea" name="body" rows="8" cols="80" placeholder="پیام شخصی شما به ما"
                   required oninvalid="setCustomValidity('متن پیام خود را وارد کنید')"
                   oninput="setCustomValidity('')">{{ old('body') }}</textarea>
         <button class="button2" type="submit" name="Submit">ارسال</button>

@@ -71,26 +71,64 @@
 //     }
 //     }
 
-$(document).on('click', '.number-spinner button', function () {
-    var btn = $(this),
-        oldValue = btn.closest('.number-spinner').find('input').val().trim(),
-        newVal = 0;
+// $(document).on('click', '.number-spinner button', function () {
+//     var btn = $(this),
+//         oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+//         newVal = 0;
+//
+//     if (btn.attr('data-dir') === 'up') {
+//         newVal = parseInt(oldValue) + 1;
+//     } else {
+//         if (oldValue > 1) {
+//             newVal = parseInt(oldValue) - 1;
+//         } else {
+//             newVal = 1;
+//         }
+//     }
+//     btn.closest('.number-spinner').find('input').val(newVal);
+//
+// });
+$(document).ready(function() {
 
-    if (btn.attr('data-dir') === 'up') {
-        newVal = parseInt(oldValue) + 1;
-    } else {
-        if (oldValue > 1) {
-            newVal = parseInt(oldValue) - 1;
-        } else {
-            newVal = 1;
-        }
-    }
-    btn.closest('.number-spinner').find('input').val(newVal);
+    $(".hamburgerMenu").click(function () {
+        $(this).toggleClass("change");
+        $(".hamburgerMenuTitles").slideToggle(1000);
+    });
+
+    $(".hamburgerMenuTitles div").click(function () {
+        $(".hamburgerMenu").removeClass("change");
+        $(".hamburgerMenuTitles").css("display","none");
+    });
+
+
+    $(".btnQty").on('click',function() {
+        $(".price").text($(".hidden").val() * $(".quantity").val());
+    });
 });
+$(document).ready(function() {
+
+    $(".operator").on('click',function() {
+        $("#product1_total_price").text($("#product1_base_price").val() * $("#number").val());
+    });
+$(".radioBtn1").click(function () {
+        $(".totalPrice").html(" 163,000 تومان");
+})
+    $(".radioBtn2").click(function () {
+        $(".totalPrice").html(" 158,000 تومان");
+    })
+});
+
+$(document).ready(function() {
+
+    $(".btnQty").on('click',function() {
+        $(".price").text($(".hidden").val() * $(".quantity").val());
+    });
+});
+
 
 $(document).ready(function () {
     $('.delete').click(function(){
-        // $(this).closest('tr').remove();
+        $(this).closest('tr').remove();
     });
    var btn = $(".sendData");
     $(".nameError").hide();
